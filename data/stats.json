@@ -1,0 +1,9 @@
+{
+  "_note": "Figures for 'The problem' section. Replace every [TODO] with a verified figure and a source URL (e.g. COA annual audit reports, PhilGEPS notices, DepEd budget documents). The label text lives in i18n/*.json (problem.c1 … problem.c4).",
+  "stats": [
+    { "key": "problem.c1", "figure": "[TODO: verified figure + source link]", "source_url": "", "source_name": "" },
+    { "key": "problem.c2", "figure": "[TODO: verified figure + source link]", "source_url": "", "source_name": "" },
+    { "key": "problem.c3", "figure": "[TODO: verified figure + source link]", "source_url": "", "source_name": "" },
+    { "key": "problem.c4", "figure": "[TODO: verified figure + source link]", "source_url": "", "source_name": "" }
+  ]
+}

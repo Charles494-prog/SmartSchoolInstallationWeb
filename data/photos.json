@@ -1,0 +1,27 @@
+{
+  "_note": "Every photo MUST have credit and license, or it is not shown. Read PHOTO_GUIDELINES.md before adding photos (especially of children). Run scripts/optimize-images.sh after adding files to assets/photos/.",
+  "photos": [
+    {
+      "file": "assets/photos/placeholder-classroom.svg",
+      "width": 1200, "height": 800,
+      "alt_en": "Illustration of a simple classroom with a blackboard, wooden desks and a window.",
+      "alt_tl": "Larawang-guhit ng isang simpleng silid-aralan na may pisara, mga mesang kahoy at bintana.",
+      "caption_en": "[TODO: replace with a real photo] A typical classroom.",
+      "caption_tl": "[TODO: palitan ng totoong larawan] Isang karaniwang silid-aralan.",
+      "credit": "SmartSchool illustration",
+      "license": "CC0",
+      "source_url": ""
+    },
+    {
+      "file": "assets/photos/placeholder-school.svg",
+      "width": 1200, "height": 800,
+      "alt_en": "Illustration of a small one-storey school building with a flag pole and trees.",
+      "alt_tl": "Larawang-guhit ng isang maliit na isang-palapag na paaralan na may flagpole at mga puno.",
+      "caption_en": "[TODO: replace with a real photo] A small rural school.",
+      "caption_tl": "[TODO: palitan ng totoong larawan] Isang maliit na paaralan sa probinsya.",
+      "credit": "SmartSchool illustration",
+      "license": "CC0",
+      "source_url": ""
+    }
+  ]
+}

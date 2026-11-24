@@ -1,0 +1,41 @@
+{
+  "_note": "Add verified articles or official documents. Entries whose headline starts with [TODO] are shown as empty 'Add source here' cards. Only use images you placed yourself in assets/evidence/.",
+  "entries": [
+    {
+      "type": "article",
+      "headline": "[TODO: add verified source]",
+      "outlet": "[TODO: outlet]",
+      "date": "[TODO: YYYY-MM-DD]",
+      "url": "",
+      "summary_en": "[TODO: one or two sentences in your own words]",
+      "summary_tl": "[TODO: isa o dalawang pangungusap sa sariling salita]",
+      "image": "",
+      "image_alt_en": "",
+      "image_alt_tl": ""
+    },
+    {
+      "type": "official-document",
+      "headline": "[TODO: add verified source]",
+      "outlet": "[TODO: agency, e.g. COA annual audit report]",
+      "date": "[TODO: YYYY-MM-DD]",
+      "url": "",
+      "summary_en": "[TODO: one or two sentences in your own words]",
+      "summary_tl": "[TODO: isa o dalawang pangungusap sa sariling salita]",
+      "image": "",
+      "image_alt_en": "",
+      "image_alt_tl": ""
+    },
+    {
+      "type": "article",
+      "headline": "[TODO: add verified source]",
+      "outlet": "[TODO: outlet]",
+      "date": "[TODO: YYYY-MM-DD]",
+      "url": "",
+      "summary_en": "[TODO: one or two sentences in your own words]",
+      "summary_tl": "[TODO: isa o dalawang pangungusap sa sariling salita]",
+      "image": "",
+      "image_alt_en": "",
+      "image_alt_tl": ""
+    }
+  ]
+}
