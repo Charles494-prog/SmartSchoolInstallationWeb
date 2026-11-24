@@ -8,8 +8,8 @@
       "label": "Windows",
       "file": "SmartSchool-Setup.exe",
       "url": "https://github.com/Charles494-prog/SmartSchoolWebsite/releases/latest/download/SmartSchool-Setup.exe",
-      "size_mb": 23.3,
-      "sha256": "084c9deb33bbdcca33b8f9c1f3bd1cc15b88bac69358c5c685f2da5c8f1d211d"
+      "size_mb": 28.5,
+      "sha256": "4749cfd70b0aa82df0d3fb9da252953854be0ccf9977a7203bfd64275f5779a6"
     },
     {
       "id": "mac",
