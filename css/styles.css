@@ -226,3 +226,12 @@ tbody th { width: 28%; }
 tbody tr:last-child > * { border-bottom: 0; }
 
 :root { color-scheme: light; }
+
+.quote-section { padding: clamp(40px, 7vw, 72px) 0; }
+.quote { margin: 0 auto; max-width: 820px; text-align: center; }
+.quote blockquote { margin: 0; }
+.quote blockquote p { font-size: clamp(22px, 3.2vw, 30px); line-height: 1.4; font-weight: 700; color: var(--ink); }
+.quote blockquote p::before { content: '“'; color: var(--green); }
+.quote blockquote p::after { content: '”'; color: var(--green); }
+.quote figcaption { margin-top: 16px; color: var(--ink-soft); font-size: 17px; }
+.credit { font-weight: 600; }

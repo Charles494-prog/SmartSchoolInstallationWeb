@@ -142,5 +142,9 @@
   "evidence.add_link": "[TODO: idagdag ang link sa orihinal]",
   "faq.q6": "Paano kung makalimutan ko ang password ng Superadmin?",
   "faq.a6": "Ang Superadmin ang pinakamahalagang account – isulat ang email at password nito at itago sa ligtas na lugar. Kayang i-reset ng Superadmin ang lahat ng ibang account, pero walang makakabawi ng Superadmin para sa inyo.",
-  "install.help_phone": "Telepono"
+  "install.help_phone": "Telepono",
+  "oss.license_enterprise": "Libre para sa mga paaralan, guro at lahat. Para sa malalaking institusyon o kumpanya na kailangan ng enterprise hosting, suporta o commercial license: gamitin ang “Kontakin ang developer” sa itaas.",
+  "quote.text": "Ang automation at makabagong pamamahala ng paaralan ay hindi dapat para lang sa malalaking paaralang kumikita ng milyon. Bawat bayaning guro ay karapat-dapat sa mga kasangkapang magbabalik ng kanilang oras – gaano man kaliit o kalayo ang kanilang paaralan.",
+  "quote.role": "gumawa ng SmartSchool",
+  "footer.credit": "Ginawa ni"
 }

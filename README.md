@@ -78,7 +78,7 @@ Find them all with `grep -rn TODO .`
 | `data/photos.json` | Replace 2 illustration placeholders with real, properly licensed photos |
 | `data/release.json` | Version, date, download URLs, file sizes, SHA-256 checksums |
 | `data/install-steps.json` | Screenshots for every step; confirm steps when the installer format is final |
-| `index.html` (Open source + footer) | `[TODO: license]` – choose the license (e.g. MIT, GPL-3.0, AGPL-3.0) |
+| `index.html` (Open source + footer) | `GNU AGPL-3.0` – choose the license (e.g. MIT, GPL-3.0, AGPL-3.0) |
 | `TRANSLATION_REVIEW.md` | Native-speaker review of the Tagalog text |
 
 ## Facts policy

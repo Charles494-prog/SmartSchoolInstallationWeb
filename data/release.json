@@ -1,15 +1,15 @@
 {
   "_note": "Update for each release. Leave url empty to show 'Coming soon'. size is in megabytes. sha256 is the checksum of the exact file.",
-  "version": "[TODO: version, e.g. 0.1.0]",
-  "date": "[TODO: release date]",
+  "version": "0.1.0",
+  "date": "Nov 25, 2026",
   "platforms": [
     {
       "id": "windows",
       "label": "Windows",
       "file": "SmartSchool-Setup.exe",
-      "url": "",
-      "size_mb": null,
-      "sha256": "[TODO: sha256]"
+      "url": "https://github.com/Charles494-prog/SmartSchoolWebsite/releases/latest/download/SmartSchool-Setup.exe",
+      "size_mb": 23.3,
+      "sha256": "084c9deb33bbdcca33b8f9c1f3bd1cc15b88bac69358c5c685f2da5c8f1d211d"
     },
     {
       "id": "mac",
