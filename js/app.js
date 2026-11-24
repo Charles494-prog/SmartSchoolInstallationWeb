@@ -101,7 +101,7 @@
     }
 
     function renderPhotos() {
-        const grid = $('#photo-grid'); if (!grid || !state.data.photos) return;
+        const grid = $('#photo-grid'); if (!grid || !state.data.photos) return; // section removed from the page
         const valid = state.data.photos.photos.filter((p) => {
             if (!p.credit || !p.license) { console.warn('[photos] skipped – missing credit or license:', p.file); return false; }
             return !p.file.includes('placeholder');
