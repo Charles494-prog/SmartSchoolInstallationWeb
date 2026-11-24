@@ -231,39 +231,6 @@
         "en": "Best for 1,000+ students.",
         "tl": "Pinakamainam para sa 1,000+ estudyante."
       }
-    },
-    {
-      "name": {
-        "en": "Vercel + Turso",
-        "tl": "Vercel + Turso"
-      },
-      "status": "no",
-      "steps": [
-        {
-          "t": {
-            "en": "Why it doesn't work (yet)",
-            "tl": "Bakit hindi pa ito gumagana"
-          },
-          "x": {
-            "en": "Vercel runs short-lived functions with no permanent disk, so student photos, documents, backups and generated PDFs would be lost, and the every-minute background jobs (reminders, backups) can't run. Turso is SQLite in the cloud, but Laravel (what SmartSchool is built on) doesn't support it without an extra third-party driver that we haven't tested.",
-            "tl": "Panandaliang function ang tumatakbo sa Vercel at walang permanenteng disk, kaya mawawala ang mga litrato, dokumento, backup at PDF ng estudyante, at hindi tatakbo ang mga background job kada minuto (paalala, backup). SQLite sa cloud ang Turso, pero hindi ito suportado ng Laravel (ang ginamit sa SmartSchool) nang walang dagdag na third-party driver na hindi pa namin nasusubukan."
-          }
-        },
-        {
-          "t": {
-            "en": "What to use instead",
-            "tl": "Ano ang gamitin sa halip"
-          },
-          "x": {
-            "en": "Shared hosting with SSH (like Hostinger Premium) for small schools, or a small VPS. Both keep your files and run the background jobs. Vercel is still great for websites like this one.",
-            "tl": "Shared hosting na may SSH (gaya ng Hostinger Premium) para sa maliliit na paaralan, o maliit na VPS. Pareho nilang iniingatan ang files at pinapatakbo ang background jobs. Magaling pa rin ang Vercel para sa mga website na gaya nito."
-          }
-        }
-      ],
-      "note": {
-        "en": "Not supported.",
-        "tl": "Hindi suportado."
-      }
     }
   ]
 }

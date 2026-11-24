@@ -163,5 +163,8 @@
   "host.steps_btn": "Tingnan ang hakbang sa online install",
   "host.guides_title": "Hakbang-hakbang para sa hosting ninyo",
   "host.supported": "Suportado",
-  "host.not_supported": "Hindi suportado"
+  "host.not_supported": "Hindi suportado",
+  "req.diff_title": "Ang pangunahing pagkakaiba",
+  "req.diff_online": "Online: nag-a-apply ang mga pamilya mula sa bahay, at may sariling account ang mga estudyante at magulang para makita ang grades, attendance at bayarin kahit saan.",
+  "req.diff_lan": "Offline (LAN): ang staff ng paaralan ang gumagawa ng lahat ng clerical na trabaho – pagre-register at pag-update ng estudyante – at sa loob lang ng campus mabubuksan ang SmartSchool."
 }

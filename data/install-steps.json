@@ -46,8 +46,8 @@
         "tl": "Sa installer, piliin kung paano ito gagamitin ng paaralan"
       },
       "text": {
-        "en": "“Offline on school Wi-Fi (LAN)” – recommended for most schools. “Online (web host)” – for parent and student accounts.",
-        "tl": "“Offline sa Wi-Fi ng paaralan (LAN)” – inirerekomenda para sa karamihan ng paaralan. “Online (web host)” – para sa account ng mga magulang at estudyante."
+        "en": "“Online (web host)” – families apply from home and students and parents get their own accounts. “Offline on school Wi-Fi (LAN)” – staff do the clerk work and it opens on campus only.",
+        "tl": "“Online (web host)” – nag-a-apply ang mga pamilya mula sa bahay at may sariling account ang mga estudyante at magulang. “Offline sa Wi-Fi ng paaralan (LAN)” – staff ang gumagawa ng clerical na trabaho at sa campus lang ito nabubuksan."
       },
       "choose_help": true,
       "screenshot": "assets/steps/step2-choose-mode.webp"

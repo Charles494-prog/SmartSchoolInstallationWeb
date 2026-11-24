@@ -163,5 +163,8 @@
   "host.steps_btn": "See the online install steps",
   "host.guides_title": "Step-by-step for your hosting",
   "host.supported": "Supported",
-  "host.not_supported": "Not supported"
+  "host.not_supported": "Not supported",
+  "req.diff_title": "The main difference",
+  "req.diff_online": "Online: families apply from home, and students and parents have their own accounts to see grades, attendance and payments from anywhere.",
+  "req.diff_lan": "Offline (LAN): the school staff do all the clerk work – registering and updating students – and SmartSchool can only be opened on campus."
 }
