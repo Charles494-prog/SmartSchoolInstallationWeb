@@ -1,41 +1,47 @@
 {
-  "_note": "Add verified articles or official documents. Entries whose headline starts with [TODO] are shown as empty 'Add source here' cards. Only use images you placed yourself in assets/evidence/.",
+  "_note": "Entries without a url show a '[TODO: add link]' note instead of the 'Read the original' button. Never invent URLs. Summaries must be in our own words.",
   "entries": [
     {
       "type": "article",
-      "headline": "[TODO: add verified source]",
-      "outlet": "[TODO: outlet]",
-      "date": "[TODO: YYYY-MM-DD]",
+      "headline": "‘DepEd budget insufficient to address classroom shortage’",
+      "outlet": "The Philippine Star",
+      "date": "October 24, 2024",
       "url": "",
-      "summary_en": "[TODO: one or two sentences in your own words]",
-      "summary_tl": "[TODO: isa o dalawang pangungusap sa sariling salita]",
-      "image": "",
-      "image_alt_en": "",
-      "image_alt_tl": ""
-    },
-    {
-      "type": "official-document",
-      "headline": "[TODO: add verified source]",
-      "outlet": "[TODO: agency, e.g. COA annual audit report]",
-      "date": "[TODO: YYYY-MM-DD]",
-      "url": "",
-      "summary_en": "[TODO: one or two sentences in your own words]",
-      "summary_tl": "[TODO: isa o dalawang pangungusap sa sariling salita]",
-      "image": "",
-      "image_alt_en": "",
-      "image_alt_tl": ""
+      "summary_en": "Education Secretary Sonny Angara said the Department of Education does not have enough funds to address the classroom shortage nationwide.",
+      "summary_tl": "Sinabi ni Education Secretary Sonny Angara na kulang ang pondo ng DepEd para tugunan ang kakulangan ng silid-aralan sa buong bansa.",
+      "image": "assets/evidence/philstar-2024-10-24.webp",
+      "image_alt_en": "Screenshot of the Philippine Star article headline and opening paragraph.",
+      "image_alt_tl": "Screenshot ng headline at unang talata ng artikulo ng Philippine Star.",
+      "width": 910,
+      "height": 1081
     },
     {
       "type": "article",
-      "headline": "[TODO: add verified source]",
-      "outlet": "[TODO: outlet]",
-      "date": "[TODO: YYYY-MM-DD]",
+      "headline": "[TODO: headline] Classroom funds and the shortage (Nov 28, 2024)",
+      "outlet": "[TODO: outlet] · by Eirene Manatlao",
+      "date": "November 28, 2024",
       "url": "",
-      "summary_en": "[TODO: one or two sentences in your own words]",
-      "summary_tl": "[TODO: isa o dalawang pangungusap sa sariling salita]",
-      "image": "",
-      "image_alt_en": "",
-      "image_alt_tl": ""
+      "summary_en": "Billions of pesos are allocated every year for classrooms and school buildings, yet the article reports a low utilization rate of these funds while the Secretary calls the budget insufficient.",
+      "summary_tl": "Bilyon-bilyong piso ang inilalaan taon-taon para sa mga silid-aralan at gusali ng paaralan, pero ayon sa artikulo ay mababa ang paggamit sa pondong ito habang sinasabi ng Kalihim na kulang ang budget.",
+      "image": "assets/evidence/classroom-funds-2024-11-28.webp",
+      "image_alt_en": "Screenshot of the article's byline, date and opening paragraphs.",
+      "image_alt_tl": "Screenshot ng byline, petsa at unang mga talata ng artikulo.",
+      "width": 1200,
+      "height": 958
+    },
+    {
+      "type": "article",
+      "headline": "[TODO: headline] DepEd budget: ₱19.51 billion for textbooks and learning materials",
+      "outlet": "[TODO: outlet]",
+      "date": "[TODO: date]",
+      "url": "",
+      "summary_en": "DepEd allocated ₱19.51 billion for textbooks and other instructional materials (up from ₱12.41 billion the year before) and aims to procure 103.93 million learning materials in 2026.",
+      "summary_tl": "Naglaan ang DepEd ng ₱19.51 bilyon para sa textbook at iba pang learning materials (mula ₱12.41 bilyon noong nakaraang taon) at layong bumili ng 103.93 milyong learning materials sa 2026.",
+      "image": "assets/evidence/textbook-budget-2026.webp",
+      "image_alt_en": "Screenshot of the budget figures for textbooks and learning materials.",
+      "image_alt_tl": "Screenshot ng budget para sa textbook at learning materials.",
+      "width": 1032,
+      "height": 432
     }
   ]
 }

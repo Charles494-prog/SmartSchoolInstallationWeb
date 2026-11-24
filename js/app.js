@@ -62,11 +62,15 @@
     function renderStats() {
         const grid = $('#stat-grid'); if (!grid || !state.data.stats) return;
         grid.replaceChildren(...state.data.stats.stats.map((s) => {
-            const todo = isTodo(s.figure) || !s.source_url;
-            return el('div', { class: 'stat' + (todo ? ' todo' : '') },
-                el('div', { class: 'stat-figure', text: s.figure }),
+            const figure = s.figure_key ? t(s.figure_key) : s.figure;
+            const todo = !s.no_source_needed && (isTodo(figure) || !s.source_url);
+            const partial = todo && !isTodo(figure); // figure known, link still missing
+            return el('div', { class: 'stat' + (todo && !partial ? ' todo' : '') },
+                el('div', { class: 'stat-figure', text: figure }),
                 el('div', { class: 'stat-label', text: t(s.key) }),
-                todo ? el('div', { class: 'todo-hint', text: t('problem.todo_hint') })
+                s.no_source_needed ? null
+                : partial ? el('div', { class: 'stat-source', text: `${t('problem.source')}: ${s.source_name}` })
+                : todo ? el('div', { class: 'todo-hint', text: t('problem.todo_hint') })
                     : el('div', { class: 'stat-source' }, t('problem.source') + ': ', el('a', { href: s.source_url, target: '_blank', rel: 'noopener', text: s.source_name || s.source_url })));
         }));
     }
@@ -74,24 +78,25 @@
     function renderEvidence() {
         const grid = $('#evidence-grid'); if (!grid || !state.data.evidence) return;
         grid.replaceChildren(...state.data.evidence.entries.map((e) => {
-            if (isTodo(e.headline) || !e.url) {
+            if (isTodo(e.headline) && !e.summary_en.replace(/\[TODO[^\]]*\]/g, '').trim()) {
                 return el('div', { class: 'evidence placeholder' },
                     svg('<path d="M12 5v14M5 12h14" stroke-linecap="round"/>', 36),
                     el('strong', { text: t('evidence.add_title') }),
                     el('span', { text: t('evidence.add_text') }));
             }
             const img = e.image && e.image.startsWith('assets/evidence/')
-                ? el('figure', {}, el('img', { src: e.image, alt: e['image_alt_' + state.lang] || e.image_alt_en || '', loading: 'lazy', width: 1200, height: 800, onerror: null }),
+                ? el('figure', {}, el('img', { src: e.image, alt: e['image_alt_' + state.lang] || e.image_alt_en || '', loading: 'lazy', width: e.width || 1200, height: e.height || 800 }),
                     el('figcaption', { text: e.outlet }))
                 : null;
             if (img) img.querySelector('img').addEventListener('error', () => img.remove());
             return el('article', { class: 'evidence' },
                 el('span', { class: 'type', text: t(e.type === 'official-document' ? 'evidence.type_doc' : 'evidence.type_article') }),
                 el('div', { class: 'meta', text: [e.outlet, e.date].filter(Boolean).join(' · ') }),
-                el('h3', { text: e.headline }),
+                el('h3', { text: e.headline.replace(/\[TODO[^\]]*\]\s*/g, '') }),
                 img,
                 el('p', { text: e['summary_' + state.lang] || e.summary_en }),
-                el('a', { class: 'read', href: e.url, target: '_blank', rel: 'noopener' }, t('evidence.read') + ' ', el('span', { class: 'sr-hint', text: t('evidence.new_tab') })));
+                e.url ? el('a', { class: 'read', href: e.url, target: '_blank', rel: 'noopener' }, t('evidence.read') + ' ', el('span', { class: 'sr-hint', text: t('evidence.new_tab') }))
+                    : el('span', { class: 'todo-inline', text: t('evidence.add_link') }));
         }));
     }
 
@@ -192,7 +197,13 @@
             el('p', { class: 'dl-other' }, el('a', { href: '#advanced', text: t('download.other') })));
     }
 
-    function renderAll() { renderHero(); renderStats(); renderEvidence(); renderPhotos(); renderInstall(); renderDownloads(); }
+    function renderContact() {
+        const c = state.data.release?.contact; const b = $('#contact-btn'); if (!b) return;
+        if (!c || !c.url || isTodo(c.url)) { b.removeAttribute('href'); b.setAttribute('aria-disabled', 'true'); b.classList.add('btn-disabled'); b.title = c?.url || ''; }
+        else { b.href = c.url; b.removeAttribute('aria-disabled'); b.classList.remove('btn-disabled'); if (c.url.startsWith('http')) { b.target = '_blank'; b.rel = 'noopener'; } }
+    }
+
+    function renderAll() { renderContact(); renderHero(); renderStats(); renderEvidence(); renderPhotos(); renderInstall(); renderDownloads(); }
 
     // ---------- copy buttons (event delegation, works for rendered steps too) ----------
     const toast = (msg) => { const n = $('#toast'); n.textContent = msg; n.classList.add('show'); clearTimeout(toast.t); toast.t = setTimeout(() => n.classList.remove('show'), 1800); };

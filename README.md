@@ -72,8 +72,9 @@ Find them all with `grep -rn TODO .`
 
 | Where | What |
 |---|---|
-| `data/stats.json` | 4 figures for "The problem" + source links (e.g. COA reports, PhilGEPS, DepEd budget documents) |
-| `data/evidence.json` | 3 placeholder entries → verified articles/official documents |
+| `data/stats.json` | Spending figure and unused-features figure (no verified DepEd data yet); source link for the ≈1,500 schools without electricity |
+| `data/evidence.json` | Links (`url`) for all 3 articles; outlet + headline for the Nov 28, 2024 and textbook-budget articles |
+| `data/release.json` → `contact.url` | Your contact link for enterprise hosting (e.g. `mailto:` or Facebook page) |
 | `data/photos.json` | Replace 2 illustration placeholders with real, properly licensed photos |
 | `data/release.json` | Version, date, download URLs, file sizes, SHA-256 checksums |
 | `data/install-steps.json` | Screenshots for every step; confirm steps when the installer format is final |

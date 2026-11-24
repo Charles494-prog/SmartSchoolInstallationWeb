@@ -1,9 +1,31 @@
 {
-  "_note": "Figures for 'The problem' section. Replace every [TODO] with a verified figure and a source URL (e.g. COA annual audit reports, PhilGEPS notices, DepEd budget documents). The label text lives in i18n/*.json (problem.c1 … problem.c4).",
+  "_note": "Figures for 'The problem' section. Replace every [TODO] with a verified figure and a source URL (e.g. COA annual audit reports, PhilGEPS notices, DepEd budget documents). The label text lives in i18n/*.json (problem.c1 … problem.c4). Set \"no_source_needed\": true for plain-language cards that contain no numbers.",
   "stats": [
-    { "key": "problem.c1", "figure": "[TODO: verified figure + source link]", "source_url": "", "source_name": "" },
-    { "key": "problem.c2", "figure": "[TODO: verified figure + source link]", "source_url": "", "source_name": "" },
-    { "key": "problem.c3", "figure": "[TODO: verified figure + source link]", "source_url": "", "source_name": "" },
-    { "key": "problem.c4", "figure": "[TODO: verified figure + source link]", "source_url": "", "source_name": "" }
+    {
+      "key": "problem.c1",
+      "figure": "[TODO: verified figure + source link]",
+      "source_url": "",
+      "source_name": "",
+      "_comment": "No DepEd-specific spending figure found yet. Do not use US LMS prices (Canvas etc.) here – they are not about DepEd."
+    },
+    {
+      "key": "problem.c2",
+      "figure": "[TODO: verified figure + source link]",
+      "source_url": "",
+      "source_name": "",
+      "_comment": "No data found on unused features in DepEd systems yet."
+    },
+    {
+      "key": "problem.c3",
+      "figure": "≈1,500 schools",
+      "source_url": "",
+      "source_name": "DepEd, as of October 2024 [TODO: link]",
+      "_comment": "From the owner's research: ~1,500 public schools without electricity, mostly last-mile areas (Cotabato, Palawan, Sulu, Zamboanga del Sur, Negros Oriental). Add the exact source URL."
+    },
+    {
+      "key": "problem.c4",
+      "figure_key": "problem.c4_figure",
+      "no_source_needed": true
+    }
   ]
 }

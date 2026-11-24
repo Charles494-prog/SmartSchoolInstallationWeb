@@ -2,63 +2,263 @@
   "_note": "Edit the install guide here without touching code. Every text has 'en' and 'tl'. 'command' (optional) shows a Copy button. 'screenshot' is a file in assets/ or empty for a placeholder. 'choose_help: true' puts the 'Not sure? Read this' box in that step. The LAN/Online choice lives ONLY inside the installer (it writes SMARTSCHOOL_MODE) – never ask it on the website before download.",
   "before": {
     "items": [
-      { "en": "A Windows 10 or 11 computer that can stay on during school hours. 4 GB memory is enough.", "tl": "Isang Windows 10 o 11 na computer na puwedeng nakabukas buong oras ng klase. Sapat na ang 4 GB na memory." },
-      { "en": "The school Wi-Fi router, if teachers will use their own phones or laptops.", "tl": "Ang Wi-Fi router ng paaralan, kung gagamit ang mga guro ng sarili nilang cellphone o laptop." },
-      { "en": "Internet only for downloading. After that, it can work offline.", "tl": "Internet para lang sa pag-download. Pagkatapos noon, puwede na itong gumana kahit offline." },
-      { "en": "The name of your school and the current school year.", "tl": "Ang pangalan ng paaralan ninyo at ang kasalukuyang school year." }
+      {
+        "en": "A Windows 10 or 11 computer that can stay on during school hours. 4 GB memory is enough.",
+        "tl": "Isang Windows 10 o 11 na computer na puwedeng nakabukas buong oras ng klase. Sapat na ang 4 GB na memory."
+      },
+      {
+        "en": "The school Wi-Fi router, if teachers will use their own phones or laptops.",
+        "tl": "Ang Wi-Fi router ng paaralan, kung gagamit ang mga guro ng sarili nilang cellphone o laptop."
+      },
+      {
+        "en": "Internet only for downloading. After that, it can work offline.",
+        "tl": "Internet para lang sa pag-download. Pagkatapos noon, puwede na itong gumana kahit offline."
+      },
+      {
+        "en": "The name of your school and the current school year.",
+        "tl": "Ang pangalan ng paaralan ninyo at ang kasalukuyang school year."
+      }
     ],
-    "time": { "en": "About 15 minutes", "tl": "Mga 15 minuto" }
+    "time": {
+      "en": "About 15 minutes",
+      "tl": "Mga 15 minuto"
+    }
   },
   "steps": [
-    { "title": { "en": "Download and open SmartSchool-Setup.exe", "tl": "I-download at buksan ang SmartSchool-Setup.exe" }, "text": { "en": "If a blue “Windows protected your PC” box appears, click “More info”, then “Run anyway”.", "tl": "Kapag may lumabas na asul na “Windows protected your PC”, i-click ang “More info”, tapos “Run anyway”." }, "screenshot": "" },
-    { "title": { "en": "In the installer, pick how your school will use it", "tl": "Sa installer, piliin kung paano ito gagamitin ng paaralan" }, "text": { "en": "“Offline on school Wi-Fi (LAN)” – recommended for most schools. “Online (web host)” – for parent and student accounts.", "tl": "“Offline sa Wi-Fi ng paaralan (LAN)” – inirerekomenda para sa karamihan ng paaralan. “Online (web host)” – para sa account ng mga magulang at estudyante." }, "choose_help": true, "screenshot": "" },
-    { "title": { "en": "Follow the screens", "tl": "Sundin ang mga screen" }, "text": { "en": "The installer does the rest: it checks the computer, prepares the database and starts SmartSchool. If Windows asks about the firewall, tick “Private networks” and click “Allow access”.", "tl": "Ang installer na ang bahala sa iba: tinitingnan nito ang computer, inihahanda ang database at sinisimulan ang SmartSchool. Kapag nagtanong ang Windows tungkol sa firewall, i-check ang “Private networks” at i-click ang “Allow access”." }, "screenshot": "" },
-    { "title": { "en": "Open SmartSchool on other devices", "tl": "Buksan ang SmartSchool sa ibang device" }, "text": { "en": "Type the address it shows (like http://192.168.1.10:8000) in a browser, or scan the QR code with a phone. Use Brave or Chrome, on the same Wi-Fi.", "tl": "I-type sa browser ang address na ipinapakita nito (gaya ng http://192.168.1.10:8000), o i-scan ang QR code gamit ang cellphone. Gumamit ng Brave o Chrome, sa parehong Wi-Fi." }, "screenshot": "" },
-    { "title": { "en": "Create the Superadmin and finish setup", "tl": "Gawin ang Superadmin at tapusin ang setup" }, "text": { "en": "Enter your name, email and a strong password, then answer the short setup questions (school name, school year, sections).", "tl": "Ilagay ang pangalan mo, email at isang matibay na password, tapos sagutin ang maikling setup (pangalan ng paaralan, school year, mga section)." }, "screenshot": "" }
+    {
+      "title": {
+        "en": "Download and open SmartSchool-Setup.exe",
+        "tl": "I-download at buksan ang SmartSchool-Setup.exe"
+      },
+      "text": {
+        "en": "If a blue “Windows protected your PC” box appears, click “More info”, then “Run anyway”.",
+        "tl": "Kapag may lumabas na asul na “Windows protected your PC”, i-click ang “More info”, tapos “Run anyway”."
+      },
+      "screenshot": ""
+    },
+    {
+      "title": {
+        "en": "In the installer, pick how your school will use it",
+        "tl": "Sa installer, piliin kung paano ito gagamitin ng paaralan"
+      },
+      "text": {
+        "en": "“Offline on school Wi-Fi (LAN)” – recommended for most schools. “Online (web host)” – for parent and student accounts.",
+        "tl": "“Offline sa Wi-Fi ng paaralan (LAN)” – inirerekomenda para sa karamihan ng paaralan. “Online (web host)” – para sa account ng mga magulang at estudyante."
+      },
+      "choose_help": true,
+      "screenshot": ""
+    },
+    {
+      "title": {
+        "en": "Follow the screens",
+        "tl": "Sundin ang mga screen"
+      },
+      "text": {
+        "en": "The installer does the rest: it checks the computer, prepares the database and starts SmartSchool. If Windows asks about the firewall, tick “Private networks” and click “Allow access”.",
+        "tl": "Ang installer na ang bahala sa iba: tinitingnan nito ang computer, inihahanda ang database at sinisimulan ang SmartSchool. Kapag nagtanong ang Windows tungkol sa firewall, i-check ang “Private networks” at i-click ang “Allow access”."
+      },
+      "screenshot": ""
+    },
+    {
+      "title": {
+        "en": "Open SmartSchool on other devices",
+        "tl": "Buksan ang SmartSchool sa ibang device"
+      },
+      "text": {
+        "en": "Type the address it shows (like http://192.168.1.10:8000) in a browser, or scan the QR code with a phone. Use Brave or Chrome, on the same Wi-Fi.",
+        "tl": "I-type sa browser ang address na ipinapakita nito (gaya ng http://192.168.1.10:8000), o i-scan ang QR code gamit ang cellphone. Gumamit ng Brave o Chrome, sa parehong Wi-Fi."
+      },
+      "screenshot": ""
+    },
+    {
+      "title": {
+        "en": "Create the Superadmin and finish setup",
+        "tl": "Gawin ang Superadmin at tapusin ang setup"
+      },
+      "text": {
+        "en": "Enter your name, email and a strong password, then answer the short setup questions. Write the Superadmin email and password down and keep them safe – this account can't be recovered by anyone else.",
+        "tl": "Ilagay ang pangalan mo, email at isang matibay na password, tapos sagutin ang maikling setup. Isulat ang email at password ng Superadmin at itago nang maayos – walang ibang makakabawi ng account na ito."
+      },
+      "screenshot": ""
+    }
   ],
   "choose_help": {
     "lan": {
-      "name": { "en": "Offline on school Wi-Fi (LAN)", "tl": "Offline sa Wi-Fi ng paaralan (LAN)" },
+      "name": {
+        "en": "Offline on school Wi-Fi (LAN)",
+        "tl": "Offline sa Wi-Fi ng paaralan (LAN)"
+      },
       "good": [
-        { "en": "Schools with slow or no internet", "tl": "Mga paaralang mabagal o walang internet" },
-        { "en": "Quick setup on one computer", "tl": "Mabilis i-set up sa isang computer" },
-        { "en": "No hosting costs", "tl": "Walang gastos sa hosting" }
+        {
+          "en": "Schools with slow or no internet",
+          "tl": "Mga paaralang mabagal o walang internet"
+        },
+        {
+          "en": "Quick setup on one computer",
+          "tl": "Mabilis i-set up sa isang computer"
+        },
+        {
+          "en": "No hosting costs",
+          "tl": "Walang gastos sa hosting"
+        }
       ],
       "keep": [
-        { "en": "No student or parent accounts – staff register students", "tl": "Walang account ang estudyante at magulang – staff ang nagre-register" },
-        { "en": "Works only inside the school network", "tl": "Gumagana lang sa loob ng network ng paaralan" },
-        { "en": "Reminders go to teachers", "tl": "Sa mga guro napupunta ang mga paalala" }
+        {
+          "en": "No student or parent accounts – staff register students",
+          "tl": "Walang account ang estudyante at magulang – staff ang nagre-register"
+        },
+        {
+          "en": "Works only inside the school network",
+          "tl": "Gumagana lang sa loob ng network ng paaralan"
+        },
+        {
+          "en": "Reminders go to teachers",
+          "tl": "Sa mga guro napupunta ang mga paalala"
+        }
       ]
     },
     "online": {
-      "name": { "en": "Online (web host)", "tl": "Online (web host)" },
+      "name": {
+        "en": "Online (web host)",
+        "tl": "Online (web host)"
+      },
       "good": [
-        { "en": "Parent and student accounts", "tl": "May account ang mga magulang at estudyante" },
-        { "en": "Grades and alerts on phones at home", "tl": "Grades at alerto sa cellphone kahit nasa bahay" },
-        { "en": "Email notifications", "tl": "Mga abiso sa email" }
+        {
+          "en": "Parent and student accounts",
+          "tl": "May account ang mga magulang at estudyante"
+        },
+        {
+          "en": "Grades and alerts on phones at home",
+          "tl": "Grades at alerto sa cellphone kahit nasa bahay"
+        },
+        {
+          "en": "Email notifications",
+          "tl": "Mga abiso sa email"
+        }
       ],
       "keep": [
-        { "en": "Needs a web host and a domain", "tl": "Kailangan ng web host at domain" },
-        { "en": "Monthly hosting cost", "tl": "May buwanang bayad sa hosting" },
-        { "en": "Someone should look after updates", "tl": "Kailangan may nag-aasikaso ng updates" }
+        {
+          "en": "Needs a web host and a domain",
+          "tl": "Kailangan ng web host at domain"
+        },
+        {
+          "en": "Monthly hosting cost",
+          "tl": "May buwanang bayad sa hosting"
+        },
+        {
+          "en": "Someone should look after updates",
+          "tl": "Kailangan may nag-aasikaso ng updates"
+        }
       ]
     }
   },
   "advanced": {
     "linux_command": "curl -fsSL https://raw.githubusercontent.com/Charles494-prog/SmartSchoolWebsite/main/install.sh | bash",
     "hosted_steps": [
-      { "title": { "en": "Get a server", "tl": "Kumuha ng server" }, "text": { "en": "A server with PHP 8.3+, MySQL and Nginx or Apache. A small plan (1–2 GB memory) is enough to start.", "tl": "Server na may PHP 8.3+, MySQL at Nginx o Apache. Sapat na ang maliit na plan (1–2 GB memory) para magsimula." } },
-      { "title": { "en": "Run the installer on the server", "tl": "Patakbuhin ang installer sa server" }, "text": { "en": "Choose “2) Online” when it asks, and enter your database details.", "tl": "Piliin ang “2) Online” kapag nagtanong, at ilagay ang detalye ng database." }, "command": "curl -fsSL https://raw.githubusercontent.com/Charles494-prog/SmartSchoolWebsite/main/install.sh | bash" },
-      { "title": { "en": "Point your website to the public folder", "tl": "Ituro ang website sa public folder" }, "text": { "en": "In your hosting panel, set the document root to ~/smartschool/public. This is the most common mistake.", "tl": "Sa hosting panel, gawing ~/smartschool/public ang document root. Ito ang pinakakaraniwang pagkakamali." } },
-      { "title": { "en": "Turn on the background jobs", "tl": "I-on ang mga background job" }, "text": { "en": "Add this cron job so reminders and backups run on time:", "tl": "Idagdag ang cron job na ito para tumakbo sa oras ang mga paalala at backup:" }, "command": "* * * * * cd ~/smartschool && php artisan schedule:run >> /dev/null 2>&1" },
-      { "title": { "en": "Open your website", "tl": "Buksan ang website mo" }, "text": { "en": "Visit your domain, create the Superadmin and finish the setup wizard.", "tl": "Puntahan ang domain mo, gawin ang Superadmin at tapusin ang setup wizard." } }
+      {
+        "title": {
+          "en": "Get a server",
+          "tl": "Kumuha ng server"
+        },
+        "text": {
+          "en": "A server with PHP 8.3+, MySQL and Nginx or Apache. A small plan (1–2 GB memory) is enough to start.",
+          "tl": "Server na may PHP 8.3+, MySQL at Nginx o Apache. Sapat na ang maliit na plan (1–2 GB memory) para magsimula."
+        }
+      },
+      {
+        "title": {
+          "en": "Run the installer on the server",
+          "tl": "Patakbuhin ang installer sa server"
+        },
+        "text": {
+          "en": "Choose “2) Online” when it asks, and enter your database details.",
+          "tl": "Piliin ang “2) Online” kapag nagtanong, at ilagay ang detalye ng database."
+        },
+        "command": "curl -fsSL https://raw.githubusercontent.com/Charles494-prog/SmartSchoolWebsite/main/install.sh | bash"
+      },
+      {
+        "title": {
+          "en": "Point your website to the public folder",
+          "tl": "Ituro ang website sa public folder"
+        },
+        "text": {
+          "en": "In your hosting panel, set the document root to ~/smartschool/public. This is the most common mistake.",
+          "tl": "Sa hosting panel, gawing ~/smartschool/public ang document root. Ito ang pinakakaraniwang pagkakamali."
+        }
+      },
+      {
+        "title": {
+          "en": "Turn on the background jobs",
+          "tl": "I-on ang mga background job"
+        },
+        "text": {
+          "en": "Add this cron job so reminders and backups run on time:",
+          "tl": "Idagdag ang cron job na ito para tumakbo sa oras ang mga paalala at backup:"
+        },
+        "command": "* * * * * cd ~/smartschool && php artisan schedule:run >> /dev/null 2>&1"
+      },
+      {
+        "title": {
+          "en": "Open your website",
+          "tl": "Buksan ang website mo"
+        },
+        "text": {
+          "en": "Visit your domain, create the Superadmin and finish the setup wizard.",
+          "tl": "Puntahan ang domain mo, gawin ang Superadmin at tapusin ang setup wizard."
+        }
+      }
     ]
   },
   "troubleshooting": [
-    { "q": { "en": "Other devices can't open the address", "tl": "Hindi mabuksan ng ibang device ang address" }, "a": { "en": "Make sure they are on the same Wi-Fi as the main computer, that you allowed SmartSchool in the firewall, and that you typed the full address including the number after the colon (for example :8000).", "tl": "Siguraduhing nasa parehong Wi-Fi sila ng main computer, na pinayagan mo ang SmartSchool sa firewall, at na kumpleto ang na-type mong address kasama ang numero pagkatapos ng colon (halimbawa :8000)." } },
-    { "q": { "en": "Windows says the app might be unsafe", "tl": "Sinasabi ng Windows na baka hindi ligtas ang app" }, "a": { "en": "This appears for new apps that aren't widely downloaded yet. Check the checksum in the Download section, then click “More info” and “Run anyway”.", "tl": "Lumalabas ito sa mga bagong app na hindi pa gaanong nada-download. I-check ang checksum sa Download section, tapos i-click ang “More info” at “Run anyway”." } },
-    { "q": { "en": "The address changed after restarting the router", "tl": "Nagbago ang address pagkatapos i-restart ang router" }, "a": { "en": "The installer's window always shows the current address. To keep it the same, ask your IT person to give the main computer a fixed (reserved) IP address in the router.", "tl": "Laging ipinapakita ng installer ang kasalukuyang address. Para hindi na magbago, ipa-set sa IT person ang fixed (reserved) IP address para sa main computer sa router." } },
-    { "q": { "en": "I chose the wrong mode", "tl": "Mali ang napili kong mode" }, "a": { "en": "The Superadmin can change it later in Settings. A backup is made first.", "tl": "Puwede itong palitan ng Superadmin sa Settings. May backup na gagawin muna." } },
-    { "q": { "en": "I forgot the admin password", "tl": "Nakalimutan ko ang admin password" }, "a": { "en": "Use “Forgot password” on the login page if email is set up. Otherwise, ask for help on GitHub – never share your password there.", "tl": "Gamitin ang “Forgot password” sa login page kung naka-set up ang email. Kung hindi, humingi ng tulong sa GitHub – huwag ibahagi doon ang password mo." } }
+    {
+      "q": {
+        "en": "Other devices can't open the address",
+        "tl": "Hindi mabuksan ng ibang device ang address"
+      },
+      "a": {
+        "en": "Make sure they are on the same Wi-Fi as the main computer, that you allowed SmartSchool in the firewall, and that you typed the full address including the number after the colon (for example :8000).",
+        "tl": "Siguraduhing nasa parehong Wi-Fi sila ng main computer, na pinayagan mo ang SmartSchool sa firewall, at na kumpleto ang na-type mong address kasama ang numero pagkatapos ng colon (halimbawa :8000)."
+      }
+    },
+    {
+      "q": {
+        "en": "Windows says the app might be unsafe",
+        "tl": "Sinasabi ng Windows na baka hindi ligtas ang app"
+      },
+      "a": {
+        "en": "This appears for new apps that aren't widely downloaded yet. Check the checksum in the Download section, then click “More info” and “Run anyway”.",
+        "tl": "Lumalabas ito sa mga bagong app na hindi pa gaanong nada-download. I-check ang checksum sa Download section, tapos i-click ang “More info” at “Run anyway”."
+      }
+    },
+    {
+      "q": {
+        "en": "The address changed after restarting the router",
+        "tl": "Nagbago ang address pagkatapos i-restart ang router"
+      },
+      "a": {
+        "en": "The installer's window always shows the current address. To keep it the same, ask your IT person to give the main computer a fixed (reserved) IP address in the router.",
+        "tl": "Laging ipinapakita ng installer ang kasalukuyang address. Para hindi na magbago, ipa-set sa IT person ang fixed (reserved) IP address para sa main computer sa router."
+      }
+    },
+    {
+      "q": {
+        "en": "I chose the wrong mode",
+        "tl": "Mali ang napili kong mode"
+      },
+      "a": {
+        "en": "The Superadmin can change it later in Settings. A backup is made first.",
+        "tl": "Puwede itong palitan ng Superadmin sa Settings. May backup na gagawin muna."
+      }
+    },
+    {
+      "q": {
+        "en": "I forgot a password",
+        "tl": "Nakalimutan ko ang password"
+      },
+      "a": {
+        "en": "Teachers and staff: ask your Superadmin to reset it. The Superadmin account itself is critical – nobody can recover it, so keep its email and password written down somewhere safe.",
+        "tl": "Mga guro at staff: ipa-reset sa Superadmin ninyo. Napakahalaga ng mismong Superadmin account – walang makakabawi nito, kaya isulat at itago nang ligtas ang email at password nito."
+      }
+    }
   ]
 }

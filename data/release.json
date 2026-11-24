@@ -3,9 +3,42 @@
   "version": "[TODO: version, e.g. 0.1.0]",
   "date": "[TODO: release date]",
   "platforms": [
-    { "id": "windows", "label": "Windows", "file": "SmartSchool-Setup.exe", "url": "", "size_mb": null, "sha256": "[TODO: sha256]" },
-    { "id": "mac", "label": "Mac", "file": "SmartSchool.dmg", "url": "", "size_mb": null, "sha256": "[TODO: sha256]" },
-    { "id": "linux", "label": "Linux", "file": "SmartSchool.AppImage", "url": "", "size_mb": null, "sha256": "[TODO: sha256]" },
-    { "id": "server", "label": "Server / hosting", "file": "Source code (GitHub)", "url": "https://github.com/Charles494-prog/SmartSchoolWebsite", "size_mb": null, "sha256": "" }
-  ]
+    {
+      "id": "windows",
+      "label": "Windows",
+      "file": "SmartSchool-Setup.exe",
+      "url": "",
+      "size_mb": null,
+      "sha256": "[TODO: sha256]"
+    },
+    {
+      "id": "mac",
+      "label": "Mac",
+      "file": "SmartSchool.dmg",
+      "url": "",
+      "size_mb": null,
+      "sha256": "[TODO: sha256]"
+    },
+    {
+      "id": "linux",
+      "label": "Linux",
+      "file": "SmartSchool.AppImage",
+      "url": "",
+      "size_mb": null,
+      "sha256": "[TODO: sha256]"
+    },
+    {
+      "id": "server",
+      "label": "Server / hosting",
+      "file": "Source code (GitHub)",
+      "url": "https://github.com/Charles494-prog/SmartSchoolWebsite",
+      "size_mb": null,
+      "sha256": ""
+    }
+  ],
+  "contact": {
+    "_comment": "How large schools reach the developer for enterprise hosting. Use a mailto: or https: link.",
+    "url": "[TODO: your contact link, e.g. mailto:you@example.com or your Facebook page]",
+    "label": ""
+  }
 }
