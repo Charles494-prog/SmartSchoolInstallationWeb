@@ -17,6 +17,10 @@
       {
         "en": "The name of your school and the current school year.",
         "tl": "Ang pangalan ng paaralan ninyo at ang kasalukuyang school year."
+      },
+      {
+        "en": "The school Wi-Fi set to “Private network” on the main computer and on every Windows computer that will use SmartSchool.",
+        "tl": "Naka-“Private network” ang Wi-Fi ng paaralan sa main computer at sa bawat Windows computer na gagamit ng SmartSchool."
       }
     ],
     "time": {
@@ -54,8 +58,8 @@
         "tl": "Sundin ang mga screen"
       },
       "text": {
-        "en": "The installer does the rest: it checks the computer, prepares the database and starts SmartSchool. If Windows asks about the firewall, tick “Private networks” and click “Allow access”.",
-        "tl": "Ang installer na ang bahala sa iba: tinitingnan nito ang computer, inihahanda ang database at sinisimulan ang SmartSchool. Kapag nagtanong ang Windows tungkol sa firewall, i-check ang “Private networks” at i-click ang “Allow access”."
+        "en": "The installer does the rest: it checks the computer, prepares the database and starts SmartSchool. If it says the network is Public, click “Yes” to make it Private – other devices can't connect on a Public network.",
+        "tl": "Ang installer na ang bahala sa iba: tinitingnan nito ang computer, inihahanda ang database at sinisimulan ang SmartSchool. Kapag sinabi nitong Public ang network, i-click ang “Yes” para gawing Private – hindi makakakonekta ang ibang device sa Public na network."
       },
       "screenshot": ""
     },
@@ -65,8 +69,8 @@
         "tl": "Buksan ang SmartSchool sa ibang device"
       },
       "text": {
-        "en": "Type the address it shows (like http://192.168.1.10:8000) in a browser, or scan the QR code with a phone. Use Brave or Chrome, on the same Wi-Fi.",
-        "tl": "I-type sa browser ang address na ipinapakita nito (gaya ng http://192.168.1.10:8000), o i-scan ang QR code gamit ang cellphone. Gumamit ng Brave o Chrome, sa parehong Wi-Fi."
+        "en": "Type the address it shows (like http://192.168.1.10:8000) in a browser on the same Wi-Fi. On every Windows computer that will use SmartSchool, set that Wi-Fi to Private: Settings › Network & internet › Wi-Fi › your network › Private network.",
+        "tl": "I-type ang address na ipinapakita nito (gaya ng http://192.168.1.10:8000) sa browser na nasa parehong Wi-Fi. Sa bawat Windows computer na gagamit ng SmartSchool, gawing Private ang Wi-Fi na iyon: Settings › Network & internet › Wi-Fi › ang network ninyo › Private network."
       },
       "screenshot": "assets/steps/step4-running.webp"
     },
@@ -216,8 +220,8 @@
         "tl": "Hindi mabuksan ng ibang device ang address"
       },
       "a": {
-        "en": "Make sure they are on the same Wi-Fi as the main computer, that you allowed SmartSchool in the firewall, and that you typed the full address including the number after the colon (for example :8000).",
-        "tl": "Siguraduhing nasa parehong Wi-Fi sila ng main computer, na pinayagan mo ang SmartSchool sa firewall, at na kumpleto ang na-type mong address kasama ang numero pagkatapos ng colon (halimbawa :8000)."
+        "en": "Check that the Wi-Fi is set to Private on the main computer (Settings › Network & internet › Wi-Fi › your network › Private network) – a Public network blocks other devices. Also make sure they are on the same Wi-Fi and that you typed the full address including the number after the colon (for example :8000).",
+        "tl": "Tingnan kung Private ang Wi-Fi sa main computer (Settings › Network & internet › Wi-Fi › ang network ninyo › Private network) – hinaharangan ng Public na network ang ibang device. Siguraduhin ding nasa parehong Wi-Fi sila at kumpleto ang na-type mong address kasama ang numero pagkatapos ng colon (halimbawa :8000)."
       }
     },
     {
