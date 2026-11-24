@@ -146,5 +146,19 @@
   "oss.license_enterprise": "Free for schools, teachers and everyone. Big institutions or companies that need enterprise hosting, support or a commercial license: use “Contact the developer” above.",
   "quote.text": "Automation and modern school management shouldn't belong only to big schools that earn millions. Every hero teacher deserves tools that give them back their time – no matter how small or far their school is.",
   "quote.role": "creator of SmartSchool",
-  "footer.credit": "Created by"
+  "footer.credit": "Created by",
+  "nav.hosting": "Hosting",
+  "host.title": "Hosting & database: what to get",
+  "host.intro": "Pick the row that matches your number of students. Offline (LAN) needs only a computer; Online needs a web host and a database.",
+  "host.size": "School size",
+  "host.mode": "Mode",
+  "host.server": "Computer or server",
+  "host.database": "Database",
+  "host.backup": "Backups",
+  "host.lan": "Offline (LAN)",
+  "host.online": "Online",
+  "host.ask_title": "What to ask your hosting company",
+  "host.steps_title": "How to install online",
+  "host.steps_text": "Rent a server, point your domain to it, and run the one-command installer there. It sets up the database, the website and HTTPS for you.",
+  "host.steps_btn": "See the online install steps"
 }

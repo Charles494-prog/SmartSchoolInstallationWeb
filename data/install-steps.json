@@ -161,54 +161,54 @@
     "hosted_steps": [
       {
         "title": {
-          "en": "Get a server",
-          "tl": "Kumuha ng server"
+          "en": "Rent a server",
+          "tl": "Umupa ng server"
         },
         "text": {
-          "en": "A server with PHP 8.3+, MySQL and Nginx or Apache. A small plan (1–2 GB memory) is enough to start.",
-          "tl": "Server na may PHP 8.3+, MySQL at Nginx o Apache. Sapat na ang maliit na plan (1–2 GB memory) para magsimula."
+          "en": "Pick the size that fits your school in the “Hosting & database” table. A VPS with Ubuntu 24.04 is the easiest – the installer sets everything up on it.",
+          "tl": "Piliin ang laki na bagay sa paaralan ninyo sa table na “Hosting at database”. Pinakamadali ang VPS na may Ubuntu 24.04 – ang installer na ang mag-aayos ng lahat."
         }
       },
       {
         "title": {
-          "en": "Run the installer on the server",
-          "tl": "Patakbuhin ang installer sa server"
+          "en": "Point your domain to the server",
+          "tl": "Ituro ang domain sa server"
         },
         "text": {
-          "en": "Choose “2) Online” when it asks, and enter your database details.",
-          "tl": "Piliin ang “2) Online” kapag nagtanong, at ilagay ang detalye ng database."
+          "en": "In your domain's DNS settings, add an “A record” for your website name (for example school.example.edu.ph) with the server's IP address. It can take up to an hour to work.",
+          "tl": "Sa DNS settings ng domain, magdagdag ng “A record” para sa pangalan ng website (halimbawa school.example.edu.ph) gamit ang IP address ng server. Puwedeng umabot ng isang oras bago gumana."
+        }
+      },
+      {
+        "title": {
+          "en": "Connect to the server",
+          "tl": "Kumonekta sa server"
+        },
+        "text": {
+          "en": "Open the Terminal (Windows: PowerShell) and log in with the IP and password your hosting company gave you:",
+          "tl": "Buksan ang Terminal (Windows: PowerShell) at mag-log in gamit ang IP at password na ibinigay ng hosting company:"
+        },
+        "command": "ssh root@YOUR-SERVER-IP"
+      },
+      {
+        "title": {
+          "en": "Run the installer",
+          "tl": "Patakbuhin ang installer"
+        },
+        "text": {
+          "en": "Paste this and press Enter. Choose “2) Online”, then “1) A fresh server I control”, and type your domain and email. It installs the database, the website and free HTTPS automatically.",
+          "tl": "I-paste ito at pindutin ang Enter. Piliin ang “2) Online”, tapos “1) A fresh server I control”, at i-type ang domain at email. Awtomatiko nitong ini-install ang database, website at libreng HTTPS."
         },
         "command": "curl -fsSL https://raw.githubusercontent.com/Charles494-prog/SmartSchoolWebsite/main/install.sh | bash"
       },
       {
         "title": {
-          "en": "Point your website to the public folder",
-          "tl": "Ituro ang website sa public folder"
-        },
-        "text": {
-          "en": "In your hosting panel, set the document root to ~/smartschool/public. This is the most common mistake.",
-          "tl": "Sa hosting panel, gawing ~/smartschool/public ang document root. Ito ang pinakakaraniwang pagkakamali."
-        }
-      },
-      {
-        "title": {
-          "en": "Turn on the background jobs",
-          "tl": "I-on ang mga background job"
-        },
-        "text": {
-          "en": "Add this cron job so reminders and backups run on time:",
-          "tl": "Idagdag ang cron job na ito para tumakbo sa oras ang mga paalala at backup:"
-        },
-        "command": "* * * * * cd ~/smartschool && php artisan schedule:run >> /dev/null 2>&1"
-      },
-      {
-        "title": {
           "en": "Open your website",
-          "tl": "Buksan ang website mo"
+          "tl": "Buksan ang website"
         },
         "text": {
-          "en": "Visit your domain, create the Superadmin and finish the setup wizard.",
-          "tl": "Puntahan ang domain mo, gawin ang Superadmin at tapusin ang setup wizard."
+          "en": "Go to https://your-domain, create the Superadmin and follow the setup pop-up. Using shared hosting instead? Choose “2) Shared hosting” in the installer, then set the document root to ~/smartschool/public and add the cron job it shows.",
+          "tl": "Pumunta sa https://your-domain, gawin ang Superadmin at sundin ang setup pop-up. Shared hosting ang gamit? Piliin ang “2) Shared hosting” sa installer, tapos gawing ~/smartschool/public ang document root at idagdag ang cron job na ipinapakita nito."
         }
       }
     ]

@@ -198,6 +198,15 @@
             el('p', { class: 'dl-other' }, el('a', { href: '#advanced', text: t('download.other') })));
     }
 
+    function renderHosting() {
+        const h = state.data.hosting; if (!h || !$('#hosting-rows')) return;
+        $('#hosting-rows').replaceChildren(...h.tiers.map((r) => el('tr', {},
+            el('th', { scope: 'row', text: pick(r.size) }),
+            el('td', {}, el('span', { class: 'pill' + (r.mode === 'online' ? ' pill-online' : ''), text: t('host.' + r.mode) })),
+            el('td', { text: pick(r.server) }), el('td', { text: pick(r.database) }), el('td', { text: pick(r.backup) }))));
+        $('#hosting-ask').replaceChildren(...h.ask.map((a) => el('li', { text: pick(a) })));
+    }
+
     function renderContact() {
         const c = state.data.release?.contact; const b = $('#contact-btn'); if (!b) return;
         if (!c || !c.url || isTodo(c.url)) { b.removeAttribute('href'); b.setAttribute('aria-disabled', 'true'); b.classList.add('btn-disabled'); b.title = c?.url || ''; }
@@ -206,7 +215,7 @@
             info.replaceChildren(el('a', { href: `mailto:${c.email}`, text: c.email }), document.createTextNode(` · ${t('install.help_phone')}: `), el('a', { href: `tel:${c.phone}`, text: c.phone })); }
     }
 
-    function renderAll() { renderContact(); renderHero(); renderStats(); renderEvidence(); renderPhotos(); renderInstall(); renderDownloads(); }
+    function renderAll() { renderContact(); renderHosting(); renderHero(); renderStats(); renderEvidence(); renderPhotos(); renderInstall(); renderDownloads(); }
 
     // ---------- copy buttons (event delegation, works for rendered steps too) ----------
     const toast = (msg) => { const n = $('#toast'); n.textContent = msg; n.classList.add('show'); clearTimeout(toast.t); toast.t = setTimeout(() => n.classList.remove('show'), 1800); };
@@ -223,7 +232,7 @@
     async function start() {
         state.device = detectDevice() || 'windows';
         document.addEventListener('click', (e) => { if (e.target.closest('a[href="#advanced"]')) $('#advanced').open = true; });
-        const files = { stats: 'data/stats.json', evidence: 'data/evidence.json', photos: 'data/photos.json', install: 'data/install-steps.json', release: 'data/release.json' };
+        const files = { stats: 'data/stats.json', evidence: 'data/evidence.json', photos: 'data/photos.json', install: 'data/install-steps.json', release: 'data/release.json', hosting: 'data/hosting.json' };
         await Promise.all(Object.entries(files).map(async ([k, url]) => {
             try { state.data[k] = await getJSON(url); } catch (err) { console.error('[data] could not load', url, err); }
         }));

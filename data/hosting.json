@@ -1,0 +1,33 @@
+{
+  "_note": "Hosting and database recommendations by school size. Specs are recommendations, not prices – SmartSchool itself is free. Each text has en and tl.",
+  "tiers": [
+    { "size": { "en": "Up to 500 students", "tl": "Hanggang 500 estudyante" }, "mode": "lan",
+      "server": { "en": "One Windows 10/11 or Linux PC with 4 GB memory and an SSD", "tl": "Isang Windows 10/11 o Linux PC na may 4 GB memory at SSD" },
+      "database": { "en": "Built-in (SQLite) – nothing to set up", "tl": "Kasama na (SQLite) – walang kailangang i-set up" },
+      "backup": { "en": "Weekly backup to a USB drive", "tl": "Lingguhang backup sa USB drive" } },
+    { "size": { "en": "500 – 2,000 students", "tl": "500 – 2,000 estudyante" }, "mode": "lan",
+      "server": { "en": "A PC with 8 GB memory and an SSD, plugged into a UPS (battery backup)", "tl": "PC na may 8 GB memory at SSD, nakasaksak sa UPS (battery backup)" },
+      "database": { "en": "Built-in (SQLite) is fine; MySQL if many staff use it at the same time", "tl": "Ayos na ang built-in (SQLite); MySQL kung maraming staff ang sabay-sabay gumagamit" },
+      "backup": { "en": "Daily backup to a USB drive or a second computer", "tl": "Araw-araw na backup sa USB drive o ibang computer" } },
+    { "size": { "en": "Up to 1,000 students", "tl": "Hanggang 1,000 estudyante" }, "mode": "online",
+      "server": { "en": "Shared web hosting with PHP 8.3+, MySQL, SSH or Terminal access, and cron jobs", "tl": "Shared web hosting na may PHP 8.3+, MySQL, SSH o Terminal, at cron jobs" },
+      "database": { "en": "MySQL 8 or MariaDB 10.6+ from the same hosting plan", "tl": "MySQL 8 o MariaDB 10.6+ na kasama sa hosting plan" },
+      "backup": { "en": "Daily automatic backups (check that your plan includes them)", "tl": "Araw-araw na awtomatikong backup (siguraduhing kasama sa plan)" } },
+    { "size": { "en": "1,000 – 5,000 students", "tl": "1,000 – 5,000 estudyante" }, "mode": "online",
+      "server": { "en": "A VPS (virtual private server): 2 CPU cores, 4 GB memory, 40 GB SSD", "tl": "VPS (virtual private server): 2 CPU core, 4 GB memory, 40 GB SSD" },
+      "database": { "en": "MySQL 8 or MariaDB on the same server", "tl": "MySQL 8 o MariaDB sa parehong server" },
+      "backup": { "en": "Daily database backups copied off the server", "tl": "Araw-araw na backup ng database na kinokopya palabas ng server" } },
+    { "size": { "en": "5,000+ students or several campuses", "tl": "5,000+ estudyante o maraming campus" }, "mode": "online",
+      "server": { "en": "VPS or cloud server: 4 CPU cores, 8 GB memory, 80 GB SSD", "tl": "VPS o cloud server: 4 CPU core, 8 GB memory, 80 GB SSD" },
+      "database": { "en": "A managed MySQL database (separate from the web server)", "tl": "Managed MySQL database (hiwalay sa web server)" },
+      "backup": { "en": "Daily backups plus point-in-time recovery – contact the developer for enterprise setup", "tl": "Araw-araw na backup at point-in-time recovery – kontakin ang developer para sa enterprise setup" } }
+  ],
+  "ask": [
+    { "en": "PHP 8.3 or newer", "tl": "PHP 8.3 o mas bago" },
+    { "en": "A MySQL 8 or MariaDB 10.6+ database, with its host, name, user and password", "tl": "MySQL 8 o MariaDB 10.6+ na database, kasama ang host, pangalan, user at password nito" },
+    { "en": "SSH or Terminal access (to run the one-command installer)", "tl": "SSH o Terminal access (para patakbuhin ang one-command installer)" },
+    { "en": "Cron jobs (for reminders and backups)", "tl": "Cron jobs (para sa mga paalala at backup)" },
+    { "en": "Free SSL (https) for your domain", "tl": "Libreng SSL (https) para sa domain ninyo" },
+    { "en": "Servers in or near the Philippines (Singapore is common) for speed", "tl": "Server sa Pilipinas o malapit (karaniwang Singapore) para mabilis" }
+  ]
+}

@@ -146,5 +146,19 @@
   "oss.license_enterprise": "Libre para sa mga paaralan, guro at lahat. Para sa malalaking institusyon o kumpanya na kailangan ng enterprise hosting, suporta o commercial license: gamitin ang “Kontakin ang developer” sa itaas.",
   "quote.text": "Ang automation at makabagong pamamahala ng paaralan ay hindi dapat para lang sa malalaking paaralang kumikita ng milyon. Bawat bayaning guro ay karapat-dapat sa mga kasangkapang magbabalik ng kanilang oras – gaano man kaliit o kalayo ang kanilang paaralan.",
   "quote.role": "gumawa ng SmartSchool",
-  "footer.credit": "Ginawa ni"
+  "footer.credit": "Ginawa ni",
+  "nav.hosting": "Hosting",
+  "host.title": "Hosting at database: ano ang kailangan",
+  "host.intro": "Piliin ang row na tugma sa dami ng estudyante ninyo. Computer lang ang kailangan ng Offline (LAN); web host at database naman ang kailangan ng Online.",
+  "host.size": "Laki ng paaralan",
+  "host.mode": "Mode",
+  "host.server": "Computer o server",
+  "host.database": "Database",
+  "host.backup": "Backup",
+  "host.lan": "Offline (LAN)",
+  "host.online": "Online",
+  "host.ask_title": "Itanong sa hosting company",
+  "host.steps_title": "Paano i-install online",
+  "host.steps_text": "Umupa ng server, ituro ang domain dito, at patakbuhin doon ang one-command installer. Ito na ang mag-aayos ng database, website at HTTPS.",
+  "host.steps_btn": "Tingnan ang hakbang sa online install"
 }
