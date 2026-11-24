@@ -38,7 +38,9 @@
   ],
   "contact": {
     "_comment": "How large schools reach the developer for enterprise hosting. Use a mailto: or https: link.",
-    "url": "[TODO: your contact link, e.g. mailto:you@example.com or your Facebook page]",
-    "label": ""
+    "url": "mailto:formalcharlesandreigalvan@gmail.com?subject=SmartSchool%20enterprise%20hosting",
+    "label": "",
+    "email": "formalcharlesandreigalvan@gmail.com",
+    "phone": "09276179017"
   }
 }

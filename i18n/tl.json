@@ -19,8 +19,8 @@
   "hero.fact3": "Kaya ng ordinaryong computer",
   "problem.title": "Saan napupunta ang pera?",
   "problem.intro": "Binibigyan ang mga paaralan ng mamahaling system na maraming feature na hindi naman nagagamit. Sa mga paaralan sa probinsya, may mga estudyante pa ring walang kuryente o pangunahing kagamitan. Galing sa buwis ng mamamayan ang perang iyan, at puwede sanang napunta sa mga silid-aralan.",
-  "problem.c1": "Ginastos sa mga school management system",
-  "problem.c2": "Bahagi ng mga feature na hindi nagagamit",
+  "problem.c1": "Ibinayad sa isang digital system ng DepEd (DERPS) na ayon sa COA ay hindi natapos at hindi nagamit",
+  "problem.c2": "Mga laptop at iba pang gamit ng DepEd na nakatambak sa bodega mula pa 2020",
   "problem.c3": "Pampublikong paaralan na wala pa ring kuryente, karamihan sa malalayong lugar",
   "problem.c4": "Ano sana ang nabili gamit ang perang iyon: maayos na silid-aralan, upuan at mesa, gamit sa klase, malinis na CR, at ligtas na open space para sa mga estudyante.",
   "problem.todo_hint": "Placeholder – maglagay ng beripikadong numero at ang pinagmulan nito.",
@@ -141,5 +141,6 @@
   "problem.c4_figure": "Silid-aralan, upuan at mesa",
   "evidence.add_link": "[TODO: idagdag ang link sa orihinal]",
   "faq.q6": "Paano kung makalimutan ko ang password ng Superadmin?",
-  "faq.a6": "Ang Superadmin ang pinakamahalagang account – isulat ang email at password nito at itago sa ligtas na lugar. Kayang i-reset ng Superadmin ang lahat ng ibang account, pero walang makakabawi ng Superadmin para sa inyo."
+  "faq.a6": "Ang Superadmin ang pinakamahalagang account – isulat ang email at password nito at itago sa ligtas na lugar. Kayang i-reset ng Superadmin ang lahat ng ibang account, pero walang makakabawi ng Superadmin para sa inyo.",
+  "install.help_phone": "Telepono"
 }

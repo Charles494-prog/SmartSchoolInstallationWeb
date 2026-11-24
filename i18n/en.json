@@ -19,8 +19,8 @@
   "hero.fact3": "Runs on an ordinary computer",
   "problem.title": "Where is the money going?",
   "problem.intro": "Schools are given expensive systems with many features that never get used. In rural schools, some students still don't have electricity or basic equipment. That money comes from taxpayers, and it could have gone to classrooms.",
-  "problem.c1": "Spent on school management systems",
-  "problem.c2": "Share of features that go unused",
+  "problem.c1": "Paid for a DepEd digital system (DERPS) that the Commission on Audit found was never completed and could not be used",
+  "problem.c2": "Laptops and other DepEd items left in warehouses since 2020",
   "problem.c3": "Public schools still without electricity, mostly in remote areas",
   "problem.c4": "What that money could buy instead: proper classrooms, chairs and desks, classroom supplies, clean restrooms (CRs), and safe open spaces for students.",
   "problem.todo_hint": "Placeholder – add a verified figure and its source.",
@@ -141,5 +141,6 @@
   "problem.c4_figure": "Classrooms, chairs and desks",
   "evidence.add_link": "[TODO: add link to the original]",
   "faq.q6": "What if I forget the Superadmin password?",
-  "faq.a6": "The Superadmin is the most important account – write its email and password down and keep them somewhere safe. Every other account can be reset by the Superadmin, but nobody can recover the Superadmin for you."
+  "faq.a6": "The Superadmin is the most important account – write its email and password down and keep them somewhere safe. Every other account can be reset by the Superadmin, but nobody can recover the Superadmin for you.",
+  "install.help_phone": "Phone"
 }

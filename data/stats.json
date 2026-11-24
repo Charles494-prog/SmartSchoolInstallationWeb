@@ -3,17 +3,15 @@
   "stats": [
     {
       "key": "problem.c1",
-      "figure": "[TODO: verified figure + source link]",
-      "source_url": "",
-      "source_name": "",
-      "_comment": "No DepEd-specific spending figure found yet. Do not use US LMS prices (Canvas etc.) here – they are not about DepEd."
+      "figure": "≈₱1 billion",
+      "source_url": "https://www.philstar.com/headlines/2024/12/23/2409362/coa-deped-spent-p1-billion-unusable-digital-system",
+      "source_name": "The Philippine Star, Dec 23, 2024 (COA 2023 audit)"
     },
     {
       "key": "problem.c2",
-      "figure": "[TODO: verified figure + source link]",
-      "source_url": "",
-      "source_name": "",
-      "_comment": "No data found on unused features in DepEd systems yet."
+      "figure": "1.5 million",
+      "source_url": "https://www.philstar.com/headlines/2024/09/03/2382569/15-million-deped-laptops-items-stuck-warehouses-2020-angara",
+      "source_name": "The Philippine Star, Sep 3, 2024"
     },
     {
       "key": "problem.c3",

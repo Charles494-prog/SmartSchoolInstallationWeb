@@ -200,7 +200,9 @@
     function renderContact() {
         const c = state.data.release?.contact; const b = $('#contact-btn'); if (!b) return;
         if (!c || !c.url || isTodo(c.url)) { b.removeAttribute('href'); b.setAttribute('aria-disabled', 'true'); b.classList.add('btn-disabled'); b.title = c?.url || ''; }
-        else { b.href = c.url; b.removeAttribute('aria-disabled'); b.classList.remove('btn-disabled'); if (c.url.startsWith('http')) { b.target = '_blank'; b.rel = 'noopener'; } }
+        else { b.href = c.url; b.removeAttribute('aria-disabled'); b.classList.remove('btn-disabled'); if (c.url.startsWith('http')) { b.target = '_blank'; b.rel = 'noopener'; }
+            let info = $('#contact-info'); if (!info) { info = el('p', { id: 'contact-info', class: 'dl-note' }); b.after(info); }
+            info.replaceChildren(el('a', { href: `mailto:${c.email}`, text: c.email }), document.createTextNode(` · ${t('install.help_phone')}: `), el('a', { href: `tel:${c.phone}`, text: c.phone })); }
     }
 
     function renderAll() { renderContact(); renderHero(); renderStats(); renderEvidence(); renderPhotos(); renderInstall(); renderDownloads(); }
