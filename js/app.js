@@ -104,8 +104,9 @@
         const grid = $('#photo-grid'); if (!grid || !state.data.photos) return;
         const valid = state.data.photos.photos.filter((p) => {
             if (!p.credit || !p.license) { console.warn('[photos] skipped – missing credit or license:', p.file); return false; }
-            return true;
+            return !p.file.includes('placeholder');
         });
+        $('#photos').hidden = valid.length === 0; // hide the gallery until real photos are added
         grid.replaceChildren(...valid.map((p) => {
             const fig = el('figure', { class: 'photo' },
                 el('img', { src: p.file, alt: p['alt_' + state.lang] || p.alt_en, loading: 'lazy', decoding: 'async', width: p.width || 1200, height: p.height || 800 }),
