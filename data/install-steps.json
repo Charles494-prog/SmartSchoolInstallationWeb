@@ -72,7 +72,7 @@
         "en": "Type the address it shows (like http://192.168.1.10:8000) in a browser on the same Wi-Fi. On every Windows computer that will use SmartSchool, set that Wi-Fi to Private: Settings › Network & internet › Wi-Fi › your network › Private network.",
         "tl": "I-type ang address na ipinapakita nito (gaya ng http://192.168.1.10:8000) sa browser na nasa parehong Wi-Fi. Sa bawat Windows computer na gagamit ng SmartSchool, gawing Private ang Wi-Fi na iyon: Settings › Network & internet › Wi-Fi › ang network ninyo › Private network."
       },
-      "screenshot": "assets/steps/step4-running.webp"
+      "screenshot": "assets/steps/network-private.webp"
     },
     {
       "title": {
@@ -83,7 +83,7 @@
         "en": "Enter your name, email and a strong password, then answer the short setup questions. Write the Superadmin email and password down and keep them safe – this account can't be recovered by anyone else.",
         "tl": "Ilagay ang pangalan mo, email at isang matibay na password, tapos sagutin ang maikling setup. Isulat ang email at password ng Superadmin at itago nang maayos – walang ibang makakabawi ng account na ito."
       },
-      "screenshot": ""
+      "screenshot": "assets/steps/step5-superadmin.webp"
     }
   ],
   "choose_help": {
