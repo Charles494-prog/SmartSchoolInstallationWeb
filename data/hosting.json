@@ -1,33 +1,269 @@
 {
   "_note": "Hosting and database recommendations by school size. Specs are recommendations, not prices – SmartSchool itself is free. Each text has en and tl.",
   "tiers": [
-    { "size": { "en": "Up to 500 students", "tl": "Hanggang 500 estudyante" }, "mode": "lan",
-      "server": { "en": "One Windows 10/11 or Linux PC with 4 GB memory and an SSD", "tl": "Isang Windows 10/11 o Linux PC na may 4 GB memory at SSD" },
-      "database": { "en": "Built-in (SQLite) – nothing to set up", "tl": "Kasama na (SQLite) – walang kailangang i-set up" },
-      "backup": { "en": "Weekly backup to a USB drive", "tl": "Lingguhang backup sa USB drive" } },
-    { "size": { "en": "500 – 2,000 students", "tl": "500 – 2,000 estudyante" }, "mode": "lan",
-      "server": { "en": "A PC with 8 GB memory and an SSD, plugged into a UPS (battery backup)", "tl": "PC na may 8 GB memory at SSD, nakasaksak sa UPS (battery backup)" },
-      "database": { "en": "Built-in (SQLite) is fine; MySQL if many staff use it at the same time", "tl": "Ayos na ang built-in (SQLite); MySQL kung maraming staff ang sabay-sabay gumagamit" },
-      "backup": { "en": "Daily backup to a USB drive or a second computer", "tl": "Araw-araw na backup sa USB drive o ibang computer" } },
-    { "size": { "en": "Up to 1,000 students", "tl": "Hanggang 1,000 estudyante" }, "mode": "online",
-      "server": { "en": "Shared web hosting with PHP 8.3+, MySQL, SSH or Terminal access, and cron jobs", "tl": "Shared web hosting na may PHP 8.3+, MySQL, SSH o Terminal, at cron jobs" },
-      "database": { "en": "MySQL 8 or MariaDB 10.6+ from the same hosting plan", "tl": "MySQL 8 o MariaDB 10.6+ na kasama sa hosting plan" },
-      "backup": { "en": "Daily automatic backups (check that your plan includes them)", "tl": "Araw-araw na awtomatikong backup (siguraduhing kasama sa plan)" } },
-    { "size": { "en": "1,000 – 5,000 students", "tl": "1,000 – 5,000 estudyante" }, "mode": "online",
-      "server": { "en": "A VPS (virtual private server): 2 CPU cores, 4 GB memory, 40 GB SSD", "tl": "VPS (virtual private server): 2 CPU core, 4 GB memory, 40 GB SSD" },
-      "database": { "en": "MySQL 8 or MariaDB on the same server", "tl": "MySQL 8 o MariaDB sa parehong server" },
-      "backup": { "en": "Daily database backups copied off the server", "tl": "Araw-araw na backup ng database na kinokopya palabas ng server" } },
-    { "size": { "en": "5,000+ students or several campuses", "tl": "5,000+ estudyante o maraming campus" }, "mode": "online",
-      "server": { "en": "VPS or cloud server: 4 CPU cores, 8 GB memory, 80 GB SSD", "tl": "VPS o cloud server: 4 CPU core, 8 GB memory, 80 GB SSD" },
-      "database": { "en": "A managed MySQL database (separate from the web server)", "tl": "Managed MySQL database (hiwalay sa web server)" },
-      "backup": { "en": "Daily backups plus point-in-time recovery – contact the developer for enterprise setup", "tl": "Araw-araw na backup at point-in-time recovery – kontakin ang developer para sa enterprise setup" } }
+    {
+      "size": {
+        "en": "Up to 500 students",
+        "tl": "Hanggang 500 estudyante"
+      },
+      "mode": "lan",
+      "server": {
+        "en": "One Windows 10/11 or Linux PC with 4 GB memory and an SSD",
+        "tl": "Isang Windows 10/11 o Linux PC na may 4 GB memory at SSD"
+      },
+      "database": {
+        "en": "Built-in (SQLite) – nothing to set up",
+        "tl": "Kasama na (SQLite) – walang kailangang i-set up"
+      },
+      "backup": {
+        "en": "Weekly backup to a USB drive",
+        "tl": "Lingguhang backup sa USB drive"
+      }
+    },
+    {
+      "size": {
+        "en": "500 – 2,000 students",
+        "tl": "500 – 2,000 estudyante"
+      },
+      "mode": "lan",
+      "server": {
+        "en": "A PC with 8 GB memory and an SSD, plugged into a UPS (battery backup)",
+        "tl": "PC na may 8 GB memory at SSD, nakasaksak sa UPS (battery backup)"
+      },
+      "database": {
+        "en": "Built-in (SQLite) is fine; MySQL if many staff use it at the same time",
+        "tl": "Ayos na ang built-in (SQLite); MySQL kung maraming staff ang sabay-sabay gumagamit"
+      },
+      "backup": {
+        "en": "Daily backup to a USB drive or a second computer",
+        "tl": "Araw-araw na backup sa USB drive o ibang computer"
+      }
+    },
+    {
+      "size": {
+        "en": "Up to 1,000 students",
+        "tl": "Hanggang 1,000 estudyante"
+      },
+      "mode": "online",
+      "server": {
+        "en": "Shared web hosting with PHP 8.3+, MySQL, SSH or Terminal access, and cron jobs",
+        "tl": "Shared web hosting na may PHP 8.3+, MySQL, SSH o Terminal, at cron jobs"
+      },
+      "database": {
+        "en": "MySQL 8 or MariaDB 10.6+ from the same hosting plan",
+        "tl": "MySQL 8 o MariaDB 10.6+ na kasama sa hosting plan"
+      },
+      "backup": {
+        "en": "Daily automatic backups (check that your plan includes them)",
+        "tl": "Araw-araw na awtomatikong backup (siguraduhing kasama sa plan)"
+      }
+    },
+    {
+      "size": {
+        "en": "1,000 – 5,000 students",
+        "tl": "1,000 – 5,000 estudyante"
+      },
+      "mode": "online",
+      "server": {
+        "en": "A VPS (virtual private server): 2 CPU cores, 4 GB memory, 40 GB SSD",
+        "tl": "VPS (virtual private server): 2 CPU core, 4 GB memory, 40 GB SSD"
+      },
+      "database": {
+        "en": "MySQL 8 or MariaDB on the same server",
+        "tl": "MySQL 8 o MariaDB sa parehong server"
+      },
+      "backup": {
+        "en": "Daily database backups copied off the server",
+        "tl": "Araw-araw na backup ng database na kinokopya palabas ng server"
+      }
+    },
+    {
+      "size": {
+        "en": "5,000+ students or several campuses",
+        "tl": "5,000+ estudyante o maraming campus"
+      },
+      "mode": "online",
+      "server": {
+        "en": "VPS or cloud server: 4 CPU cores, 8 GB memory, 80 GB SSD",
+        "tl": "VPS o cloud server: 4 CPU core, 8 GB memory, 80 GB SSD"
+      },
+      "database": {
+        "en": "A managed MySQL database (separate from the web server)",
+        "tl": "Managed MySQL database (hiwalay sa web server)"
+      },
+      "backup": {
+        "en": "Daily backups plus point-in-time recovery – contact the developer for enterprise setup",
+        "tl": "Araw-araw na backup at point-in-time recovery – kontakin ang developer para sa enterprise setup"
+      }
+    }
   ],
   "ask": [
-    { "en": "PHP 8.3 or newer", "tl": "PHP 8.3 o mas bago" },
-    { "en": "A MySQL 8 or MariaDB 10.6+ database, with its host, name, user and password", "tl": "MySQL 8 o MariaDB 10.6+ na database, kasama ang host, pangalan, user at password nito" },
-    { "en": "SSH or Terminal access (to run the one-command installer)", "tl": "SSH o Terminal access (para patakbuhin ang one-command installer)" },
-    { "en": "Cron jobs (for reminders and backups)", "tl": "Cron jobs (para sa mga paalala at backup)" },
-    { "en": "Free SSL (https) for your domain", "tl": "Libreng SSL (https) para sa domain ninyo" },
-    { "en": "Servers in or near the Philippines (Singapore is common) for speed", "tl": "Server sa Pilipinas o malapit (karaniwang Singapore) para mabilis" }
+    {
+      "en": "PHP 8.3 or newer",
+      "tl": "PHP 8.3 o mas bago"
+    },
+    {
+      "en": "A MySQL 8 or MariaDB 10.6+ database, with its host, name, user and password",
+      "tl": "MySQL 8 o MariaDB 10.6+ na database, kasama ang host, pangalan, user at password nito"
+    },
+    {
+      "en": "SSH or Terminal access (to run the one-command installer)",
+      "tl": "SSH o Terminal access (para patakbuhin ang one-command installer)"
+    },
+    {
+      "en": "Cron jobs (for reminders and backups)",
+      "tl": "Cron jobs (para sa mga paalala at backup)"
+    },
+    {
+      "en": "Free SSL (https) for your domain",
+      "tl": "Libreng SSL (https) para sa domain ninyo"
+    },
+    {
+      "en": "Servers in or near the Philippines (Singapore is common) for speed",
+      "tl": "Server sa Pilipinas o malapit (karaniwang Singapore) para mabilis"
+    }
+  ],
+  "guides": [
+    {
+      "name": {
+        "en": "Hostinger (shared hosting: Premium or Business)",
+        "tl": "Hostinger (shared hosting: Premium o Business)"
+      },
+      "status": "ok",
+      "steps": [
+        {
+          "t": {
+            "en": "Set PHP to 8.3 or newer",
+            "tl": "Gawing PHP 8.3 o mas bago"
+          },
+          "x": {
+            "en": "hPanel › Websites › Manage › Advanced › PHP Configuration › choose 8.3+.",
+            "tl": "hPanel › Websites › Manage › Advanced › PHP Configuration › piliin ang 8.3+."
+          }
+        },
+        {
+          "t": {
+            "en": "Create a MySQL database",
+            "tl": "Gumawa ng MySQL database"
+          },
+          "x": {
+            "en": "hPanel › Databases › Management. Write down the database name, user and password. The host is usually localhost.",
+            "tl": "hPanel › Databases › Management. Isulat ang database name, user at password. Kadalasan localhost ang host."
+          }
+        },
+        {
+          "t": {
+            "en": "Turn on SSH and connect",
+            "tl": "I-on ang SSH at kumonekta"
+          },
+          "x": {
+            "en": "hPanel › Advanced › SSH Access › Enable. Copy the ssh command shown there into PowerShell or Terminal.",
+            "tl": "hPanel › Advanced › SSH Access › Enable. Kopyahin ang ssh command doon papunta sa PowerShell o Terminal."
+          }
+        },
+        {
+          "t": {
+            "en": "Run the installer",
+            "tl": "Patakbuhin ang installer"
+          },
+          "x": {
+            "en": "Choose “2) Online”, then “2) Shared hosting”, and type the database details. It uses a ready-made package (no Node.js needed), connects your domain's public_html folder to SmartSchool (your old folder is kept as a backup) and adds the cron job.",
+            "tl": "Piliin ang “2) Online”, tapos “2) Shared hosting”, at i-type ang detalye ng database. Gumagamit ito ng ready-made package (hindi kailangan ng Node.js), ikinokonekta ang public_html ng domain sa SmartSchool (itinatabi ang lumang folder bilang backup) at nagdadagdag ng cron job."
+          },
+          "command": "curl -fsSL https://raw.githubusercontent.com/Charles494-prog/SmartSchoolWebsite/main/install.sh | bash"
+        },
+        {
+          "t": {
+            "en": "Turn on SSL and open your website",
+            "tl": "I-on ang SSL at buksan ang website"
+          },
+          "x": {
+            "en": "hPanel › Security › SSL › install the free certificate. Then open https://your-domain and create the Superadmin.",
+            "tl": "hPanel › Security › SSL › i-install ang libreng certificate. Tapos buksan ang https://your-domain at gawin ang Superadmin."
+          }
+        }
+      ],
+      "note": {
+        "en": "Hostinger's Single plan has no SSH, so the installer can't run there – use Premium, Business or a Hostinger VPS.",
+        "tl": "Walang SSH ang Single plan ng Hostinger kaya hindi tatakbo doon ang installer – gamitin ang Premium, Business o Hostinger VPS."
+      }
+    },
+    {
+      "name": {
+        "en": "Any VPS (Hostinger VPS, DigitalOcean, AWS Lightsail, Linode, …)",
+        "tl": "Kahit anong VPS (Hostinger VPS, DigitalOcean, AWS Lightsail, Linode, …)"
+      },
+      "status": "ok",
+      "steps": [
+        {
+          "t": {
+            "en": "Create an Ubuntu 24.04 server",
+            "tl": "Gumawa ng Ubuntu 24.04 server"
+          },
+          "x": {
+            "en": "Pick a size from the table above. Note the server's IP address and root password.",
+            "tl": "Pumili ng laki mula sa table sa itaas. Tandaan ang IP address at root password ng server."
+          }
+        },
+        {
+          "t": {
+            "en": "Point your domain to it",
+            "tl": "Ituro ang domain dito"
+          },
+          "x": {
+            "en": "Add an A record with the server's IP in your domain's DNS settings.",
+            "tl": "Magdagdag ng A record na may IP ng server sa DNS settings ng domain."
+          }
+        },
+        {
+          "t": {
+            "en": "Connect and run the installer",
+            "tl": "Kumonekta at patakbuhin ang installer"
+          },
+          "x": {
+            "en": "ssh root@YOUR-SERVER-IP, then paste the command. Choose “2) Online” › “1) A fresh server I control”. It installs the database, web server and HTTPS for you.",
+            "tl": "ssh root@YOUR-SERVER-IP, tapos i-paste ang command. Piliin ang “2) Online” › “1) A fresh server I control”. Ito na ang mag-i-install ng database, web server at HTTPS."
+          },
+          "command": "curl -fsSL https://raw.githubusercontent.com/Charles494-prog/SmartSchoolWebsite/main/install.sh | bash"
+        }
+      ],
+      "note": {
+        "en": "Best for 1,000+ students.",
+        "tl": "Pinakamainam para sa 1,000+ estudyante."
+      }
+    },
+    {
+      "name": {
+        "en": "Vercel + Turso",
+        "tl": "Vercel + Turso"
+      },
+      "status": "no",
+      "steps": [
+        {
+          "t": {
+            "en": "Why it doesn't work (yet)",
+            "tl": "Bakit hindi pa ito gumagana"
+          },
+          "x": {
+            "en": "Vercel runs short-lived functions with no permanent disk, so student photos, documents, backups and generated PDFs would be lost, and the every-minute background jobs (reminders, backups) can't run. Turso is SQLite in the cloud, but Laravel (what SmartSchool is built on) doesn't support it without an extra third-party driver that we haven't tested.",
+            "tl": "Panandaliang function ang tumatakbo sa Vercel at walang permanenteng disk, kaya mawawala ang mga litrato, dokumento, backup at PDF ng estudyante, at hindi tatakbo ang mga background job kada minuto (paalala, backup). SQLite sa cloud ang Turso, pero hindi ito suportado ng Laravel (ang ginamit sa SmartSchool) nang walang dagdag na third-party driver na hindi pa namin nasusubukan."
+          }
+        },
+        {
+          "t": {
+            "en": "What to use instead",
+            "tl": "Ano ang gamitin sa halip"
+          },
+          "x": {
+            "en": "Shared hosting with SSH (like Hostinger Premium) for small schools, or a small VPS. Both keep your files and run the background jobs. Vercel is still great for websites like this one.",
+            "tl": "Shared hosting na may SSH (gaya ng Hostinger Premium) para sa maliliit na paaralan, o maliit na VPS. Pareho nilang iniingatan ang files at pinapatakbo ang background jobs. Magaling pa rin ang Vercel para sa mga website na gaya nito."
+          }
+        }
+      ],
+      "note": {
+        "en": "Not supported.",
+        "tl": "Hindi suportado."
+      }
+    }
   ]
 }

@@ -160,5 +160,8 @@
   "host.ask_title": "What to ask your hosting company",
   "host.steps_title": "How to install online",
   "host.steps_text": "Rent a server, point your domain to it, and run the one-command installer there. It sets up the database, the website and HTTPS for you.",
-  "host.steps_btn": "See the online install steps"
+  "host.steps_btn": "See the online install steps",
+  "host.guides_title": "Step-by-step for your hosting",
+  "host.supported": "Supported",
+  "host.not_supported": "Not supported"
 }

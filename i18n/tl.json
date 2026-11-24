@@ -160,5 +160,8 @@
   "host.ask_title": "Itanong sa hosting company",
   "host.steps_title": "Paano i-install online",
   "host.steps_text": "Umupa ng server, ituro ang domain dito, at patakbuhin doon ang one-command installer. Ito na ang mag-aayos ng database, website at HTTPS.",
-  "host.steps_btn": "Tingnan ang hakbang sa online install"
+  "host.steps_btn": "Tingnan ang hakbang sa online install",
+  "host.guides_title": "Hakbang-hakbang para sa hosting ninyo",
+  "host.supported": "Suportado",
+  "host.not_supported": "Hindi suportado"
 }

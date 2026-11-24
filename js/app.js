@@ -204,6 +204,11 @@
             el('th', { scope: 'row', text: pick(r.size) }),
             el('td', {}, el('span', { class: 'pill' + (r.mode === 'online' ? ' pill-online' : ''), text: t('host.' + r.mode) })),
             el('td', { text: pick(r.server) }), el('td', { text: pick(r.database) }), el('td', { text: pick(r.backup) }))));
+        $('#hosting-guides').replaceChildren(...(h.guides || []).map((g) => el('details', {},
+            el('summary', {}, pick(g.name) + ' ', el('span', { class: 'pill' + (g.status === 'ok' ? ' pill-online' : ''), text: t(g.status === 'ok' ? 'host.supported' : 'host.not_supported') })),
+            el('div', { class: 'guide-body' },
+                el('ol', { class: 'steps' }, ...g.steps.map((s) => el('li', {}, el('div', {}, el('h4', { text: pick(s.t) }), el('p', { text: pick(s.x) }), s.command ? codeBlock(s.command) : null)))),
+                g.note ? el('p', { class: 'dl-note', text: pick(g.note) }) : null))));
         $('#hosting-ask').replaceChildren(...h.ask.map((a) => el('li', { text: pick(a) })));
     }
 
