@@ -34,7 +34,7 @@
         "en": "If a blue “Windows protected your PC” box appears, click “More info”, then “Run anyway”.",
         "tl": "Kapag may lumabas na asul na “Windows protected your PC”, i-click ang “More info”, tapos “Run anyway”."
       },
-      "screenshot": ""
+      "screenshot": "assets/steps/step1-installer.webp"
     },
     {
       "title": {
@@ -46,7 +46,7 @@
         "tl": "“Offline sa Wi-Fi ng paaralan (LAN)” – inirerekomenda para sa karamihan ng paaralan. “Online (web host)” – para sa account ng mga magulang at estudyante."
       },
       "choose_help": true,
-      "screenshot": ""
+      "screenshot": "assets/steps/step2-choose-mode.webp"
     },
     {
       "title": {
@@ -68,7 +68,7 @@
         "en": "Type the address it shows (like http://192.168.1.10:8000) in a browser, or scan the QR code with a phone. Use Brave or Chrome, on the same Wi-Fi.",
         "tl": "I-type sa browser ang address na ipinapakita nito (gaya ng http://192.168.1.10:8000), o i-scan ang QR code gamit ang cellphone. Gumamit ng Brave o Chrome, sa parehong Wi-Fi."
       },
-      "screenshot": ""
+      "screenshot": "assets/steps/step4-running.webp"
     },
     {
       "title": {
