@@ -5,14 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>SmartSchool</title>
     <meta name="description" content="SmartSchool – free, open-source school management for every Filipino school, online or offline.">
-    <meta name="theme-color" content="#1f5f46">
+    <meta name="theme-color" content="#4f46e5">
     <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/story.css">
     <script src="js/app.js" defer></script>
+    <script src="js/story.js" defer></script>
 </head>
 <body>
 <a class="skip" href="#main" data-i18n="skip"></a>
 
+<div class="progress" aria-hidden="true"></div>
 <header class="site-header">
     <div class="wrap header-inner">
         <a href="#top" class="brand">
@@ -20,6 +23,8 @@
             <span>SmartSchool</span>
         </a>
         <nav class="main-nav" data-i18n-attr="aria-label:nav.label">
+            <a href="#day" data-i18n="nav.day"></a>
+            <a href="#modes" data-i18n="nav.modes"></a>
             <a href="#problem" data-i18n="nav.problem"></a>
             <a href="#who" data-i18n="nav.who"></a>
             <a href="#features" data-i18n="nav.features"></a>
@@ -43,9 +48,12 @@
 
     <!-- Hero -->
     <section class="hero" id="top">
-        <div class="wrap hero-inner">
+        <div class="hero-bg" aria-hidden="true"><span class="blob b1"></span><span class="blob b2"></span><span class="blob b3"></span></div>
+        <div class="wrap hero-grid">
+        <div class="hero-inner">
             <p class="eyebrow" data-i18n="hero.eyebrow"></p>
-            <h1 data-i18n="hero.title"></h1>
+            <h1 data-i18n="story.hero_title"></h1>
+            <p class="hero-tagline" data-i18n="hero.title"></p>
             <p class="lead" data-i18n="hero.subtitle"></p>
             <div class="hero-cta" id="hero-download">
                 <!-- Filled by js/app.js from data/release.json and the visitor's OS:
@@ -58,6 +66,167 @@
                 <li data-i18n="hero.fact2"></li>
                 <li data-i18n="hero.fact3"></li>
             </ul>
+        </div>
+        <!-- Animated dashboard mockup (illustration; numbers are examples) -->
+        <figure class="hero-visual" role="img" data-i18n-attr="aria-label:story.hero_alt" data-anim>
+            <div class="browser">
+                <div class="browser-bar" aria-hidden="true"><i></i><i></i><i></i><span>smartschool.local</span></div>
+                <div class="dash" aria-hidden="true">
+                    <div class="dash-side"><b></b><b class="on"></b><b></b><b></b><b></b></div>
+                    <div class="dash-main">
+                        <div class="kpis">
+                            <div class="kpi"><small data-i18n="story.kpi_students"></small><strong data-count="1248">0</strong></div>
+                            <div class="kpi"><small data-i18n="story.kpi_present"></small><strong><span data-count="96">0</span>%</strong></div>
+                            <div class="kpi"><small data-i18n="story.kpi_fees"></small><strong>₱<span data-count="84">0</span>k</strong></div>
+                        </div>
+                        <div class="chart">
+                            <small data-i18n="story.kpi_chart"></small>
+                            <svg viewBox="0 0 300 110" preserveAspectRatio="none">
+                                <g class="bars"><rect x="12" y="50" width="26" height="60" rx="4"/><rect x="56" y="34" width="26" height="76" rx="4"/><rect x="100" y="44" width="26" height="66" rx="4"/><rect x="144" y="22" width="26" height="88" rx="4"/><rect x="188" y="30" width="26" height="80" rx="4"/><rect x="232" y="16" width="26" height="94" rx="4"/></g>
+                                <path class="line" pathLength="1" d="M25 58 L69 40 L113 50 L157 26 L201 34 L245 18 L290 10"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="chip chip1" aria-hidden="true"><span class="dot ok"></span><span data-i18n="story.chip1"></span></div>
+            <div class="chip chip2" aria-hidden="true"><span class="dot info"></span><span data-i18n="story.chip2"></span></div>
+            <div class="chip chip3" aria-hidden="true"><span class="dot warm"></span><span data-i18n="story.chip3"></span></div>
+        </figure>
+        </div>
+    </section>
+
+    <!-- STORY: before → shift -->
+    <section class="desk" id="story" aria-labelledby="desk-title">
+        <div class="desk-sticky">
+            <div class="wrap desk-head">
+                <p class="kicker" data-i18n="story.desk_kicker"></p>
+                <h2 id="desk-title" data-i18n="story.desk_title"></h2>
+                <p class="section-lead" data-i18n="story.desk_lead"></p>
+            </div>
+            <div class="desk-stage" role="img" data-i18n-attr="aria-label:story.desk_alt">
+                <div class="dash-target" aria-hidden="true"><div class="dt-bar"><i></i><i></i><i></i></div></div>
+                <div class="paper p1" style="--x:-300px;--y:-60px;--r:-14deg;--tx:-150px;--ty:-40px" aria-hidden="true">
+                    <svg viewBox="0 0 24 24"><path d="M9 11l3 3 8-8M20 12v7a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h9"/></svg>
+                    <b data-i18n="story.paper_att"></b><span class="lines"><i></i><i></i><i></i><i></i></span></div>
+                <div class="paper p2" style="--x:260px;--y:-90px;--r:11deg;--tx:0px;--ty:-40px" aria-hidden="true">
+                    <svg viewBox="0 0 24 24"><path d="M4 19V5a2 2 0 0 1 2-2h12v18H6a2 2 0 0 1-2-2zM8 7h6M8 11h6"/></svg>
+                    <b data-i18n="story.paper_grades"></b><span class="lines"><i></i><i></i><i></i></span></div>
+                <div class="paper p3" style="--x:-200px;--y:90px;--r:8deg;--tx:150px;--ty:-40px" aria-hidden="true">
+                    <svg viewBox="0 0 24 24"><path d="M6 2h12v20l-3-2-3 2-3-2-3 2zM9 7h6M9 11h6M9 15h3"/></svg>
+                    <b data-i18n="story.paper_receipts"></b><span class="lines"><i></i><i></i></span></div>
+                <div class="paper p4 phone-card" style="--x:250px;--y:100px;--r:-9deg;--tx:-75px;--ty:60px" aria-hidden="true">
+                    <svg viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
+                    <b data-i18n="story.paper_phone"></b></div>
+                <div class="paper p5" style="--x:30px;--y:150px;--r:-4deg;--tx:75px;--ty:60px" aria-hidden="true">
+                    <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+                    <b data-i18n="story.paper_sched"></b><span class="lines"><i></i><i></i><i></i></span></div>
+            </div>
+            <p class="desk-caption" data-i18n="story.shift_caption"></p>
+        </div>
+    </section>
+
+    <!-- STORY: a day in the life -->
+    <section class="day" id="day" aria-labelledby="day-title">
+        <div class="wrap">
+            <p class="kicker" data-i18n="story.day_kicker"></p>
+            <h2 id="day-title" data-i18n="story.day_title"></h2>
+            <p class="section-lead" data-i18n="story.day_lead"></p>
+            <div class="day-grid">
+                <ol class="scenes">
+                    <li class="scene" data-scene="0"><span class="time">6:45 AM</span><h3 data-i18n="story.s1_title"></h3><p data-i18n="story.s1_text"></p></li>
+                    <li class="scene" data-scene="1"><span class="time">9:00 AM</span><h3 data-i18n="story.s2_title"></h3><p data-i18n="story.s2_text"></p></li>
+                    <li class="scene" data-scene="2"><span class="time">1:00 PM</span><h3 data-i18n="story.s3_title"></h3><p data-i18n="story.s3_text"></p></li>
+                    <li class="scene" data-scene="3"><span class="time">3:30 PM</span><h3 data-i18n="story.s4_title"></h3><p data-i18n="story.s4_text"></p></li>
+                    <li class="scene" data-scene="4"><span class="time">5:00 PM</span><h3 data-i18n="story.s5_title"></h3><p data-i18n="story.s5_text"></p><p class="scene-note" data-i18n="story.s5_note"></p></li>
+                </ol>
+                <div class="stage" aria-hidden="true">
+                    <div class="device">
+                        <div class="device-time"><span class="dt-clock">6:45 AM</span><span class="dt-dots"><i></i><i></i><i></i><i></i><i></i></span></div>
+                        <!-- 1 gate -->
+                        <div class="screen sc-gate" data-screen="0">
+                            <div class="qr"><svg viewBox="0 0 21 21"><path d="M1 1h7v7H1zM13 1h7v7h-7zM1 13h7v7H1zM3 3v3h3V3zM15 3v3h3V3zM3 15v3h3v-3zM10 1h2v2h-2zM10 5h2v4h-2zM13 10h2v2h-2zM17 10h3v2h-3zM10 13h3v2h-3zM15 15h2v5h-2zM18 13h2v2h-2zM10 17h3v3h-3zM10 10h2v2h-2zM1 10h3v2H1zM6 10h2v2H6z"/></svg><span class="scanline"></span></div>
+                            <svg class="check" viewBox="0 0 52 52"><circle cx="26" cy="26" r="24"/><path pathLength="1" d="M15 27l7 7 15-15"/></svg>
+                            <p class="sc-name">Maria Santos · Grade 5</p>
+                            <div class="notif"><b data-i18n="story.notif_title"></b><span data-i18n="story.notif_text"></span></div>
+                        </div>
+                        <!-- 2 classroom -->
+                        <div class="screen sc-class" data-screen="1">
+                            <p class="sc-h" data-i18n="story.class_h"></p>
+                            <ul class="roll">
+                                <li><span>Ana Reyes</span><em data-i18n="story.present"></em></li>
+                                <li><span>Ben Cruz</span><em data-i18n="story.present"></em></li>
+                                <li><span>Carla Lim</span><em data-i18n="story.present"></em></li>
+                                <li><span>Dino Ramos</span><em data-i18n="story.present"></em></li>
+                                <li><span>Ella Torres</span><em data-i18n="story.present"></em></li>
+                            </ul>
+                        </div>
+                        <!-- 3 grades -->
+                        <div class="screen sc-grades" data-screen="2">
+                            <p class="sc-h" data-i18n="story.grades_h"></p>
+                            <div class="scores"><span>88</span><span>92</span><span>85</span><span>95</span></div>
+                            <p class="avg"><span data-i18n="story.average"></span> <strong data-count="90" data-dec="0">0</strong></p>
+                            <div class="printer"><div class="slot"></div><div class="report"><b data-i18n="story.report_card"></b><i></i><i></i><i></i></div></div>
+                        </div>
+                        <!-- 4 office -->
+                        <div class="screen sc-office" data-screen="3">
+                            <p class="sc-h" data-i18n="story.office_h"></p>
+                            <div class="plan"><span data-i18n="story.plan"></span><b>₱2,500</b></div>
+                            <div class="receipt"><b data-i18n="story.receipt"></b><span>OR #00428</span><span>₱2,500.00</span></div>
+                            <p class="bal"><span data-i18n="story.balance"></span> <strong>₱<span data-countdown="7500" data-to="5000">7500</span></strong></p>
+                        </div>
+                        <!-- 5 home -->
+                        <div class="screen sc-home" data-screen="4">
+                            <p class="sc-h" data-i18n="story.home_h"></p>
+                            <div class="mini-grade"><span>Math</span><b>92</b><span>Science</span><b>88</b></div>
+                            <div class="bubble in" data-i18n="story.chat1"></div>
+                            <div class="bubble out" data-i18n="story.chat2"></div>
+                            <div class="bubble in" data-i18n="story.chat3"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- STORY: offline / online -->
+    <section class="section net" id="modes" aria-labelledby="net-title">
+        <div class="wrap">
+            <p class="kicker" data-i18n="story.net_kicker"></p>
+            <h2 id="net-title" data-i18n="story.net_title"></h2>
+            <p class="section-lead" data-i18n="story.net_lead"></p>
+            <div class="seg" role="group" data-i18n-attr="aria-label:story.net_toggle">
+                <span class="seg-ind" aria-hidden="true"></span>
+                <button type="button" data-net="lan" aria-pressed="true" data-i18n="req.lan"></button>
+                <button type="button" data-net="online" aria-pressed="false" data-i18n="req.online"></button>
+            </div>
+            <figure class="net-fig" data-mode="lan" data-anim>
+                <svg viewBox="0 0 800 400" role="img" aria-labelledby="net-desc">
+                    <desc id="net-desc" data-i18n="story.net_alt"></desc>
+                    <defs>
+                        <mask id="m-lines"><g class="draw" stroke="#fff" stroke-width="6" fill="none">
+                            <path pathLength="1" d="M330 200 L160 90"/><path pathLength="1" d="M330 200 L130 300"/><path pathLength="1" d="M330 200 L330 350"/><path pathLength="1" d="M330 200 L470 330"/></g></mask>
+                        <mask id="m-online"><g class="draw" stroke="#fff" stroke-width="6" fill="none"><path pathLength="1" d="M330 200 C420 120 520 90 600 90"/><path pathLength="1" d="M640 110 L690 290"/></g></mask>
+                    </defs>
+                    <g class="rings"><circle cx="330" cy="200" r="60"/><circle cx="330" cy="200" r="60"/><circle cx="330" cy="200" r="60"/></g>
+                    <g class="links" mask="url(#m-lines)"><path d="M330 200 L160 90"/><path d="M330 200 L130 300"/><path d="M330 200 L330 350"/><path d="M330 200 L470 330"/></g>
+                    <g class="links online-only" mask="url(#m-online)"><path d="M330 200 C420 120 520 90 600 90"/><path d="M640 110 L690 290"/></g>
+                    <!-- server PC -->
+                    <g class="node pc"><rect x="290" y="165" width="80" height="56" rx="6"/><rect x="298" y="173" width="64" height="38" rx="3" class="scr"/><path d="M318 221h24v10h-24zM306 233h48"/></g>
+                    <!-- devices -->
+                    <g class="node dev" style="--d:.2s"><rect x="128" y="70" width="64" height="40" rx="4"/><path d="M118 112h84"/></g>
+                    <g class="node dev" style="--d:.4s"><rect x="98" y="282" width="64" height="40" rx="4"/><path d="M88 324h84"/></g>
+                    <g class="node dev" style="--d:.6s"><rect x="314" y="332" width="32" height="54" rx="6"/></g>
+                    <g class="node dev" style="--d:.8s"><rect x="454" y="310" width="32" height="54" rx="6"/></g>
+                    <!-- cloud + home -->
+                    <g class="node online-only cloud"><path d="M590 115h90a28 28 0 0 0-6-55 40 40 0 0 0-76 8 24 24 0 0 0-8 47z"/></g>
+                    <g class="node online-only home"><path d="M650 330l40-34 40 34v46h-80z"/><rect x="680" y="346" width="20" height="30"/></g>
+                    <text x="330" y="150" class="lbl lan-only" text-anchor="middle" data-i18n="story.net_label_lan"></text>
+                    <text x="635" y="40" class="lbl online-only" text-anchor="middle" data-i18n="story.net_label_cloud"></text>
+                    <text x="690" y="395" class="lbl online-only" text-anchor="middle" data-i18n="story.net_label_home"></text>
+                </svg>
+                <figcaption><span class="lan-only" data-i18n="req.diff_lan"></span><span class="online-only" data-i18n="req.diff_online"></span></figcaption>
+            </figure>
         </div>
     </section>
 
@@ -281,6 +450,7 @@
         </div>
     </div>
 </footer>
+<span hidden id="done-text" data-i18n="story.done"></span>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
 </body>
 </html>

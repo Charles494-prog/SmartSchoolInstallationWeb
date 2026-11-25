@@ -56,6 +56,7 @@
         }));
         $$('[data-lang]').forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.lang === lang)));
         renderAll();
+        document.dispatchEvent(new CustomEvent('ss:rendered'));
     }
 
     // ---------- sections built from data files ----------
@@ -226,10 +227,11 @@
     const toast = (msg) => { const n = $('#toast'); n.textContent = msg; n.classList.add('show'); clearTimeout(toast.t); toast.t = setTimeout(() => n.classList.remove('show'), 1800); };
     document.addEventListener('click', async (e) => {
         const b = e.target.closest('.copy'); if (!b) return;
-        const text = b.previousElementSibling?.innerText || '';
-        try { await navigator.clipboard.writeText(text); b.textContent = t('install.copied'); toast(t('install.copied')); }
+        const code = b.previousElementSibling?.querySelector('code');
+        const text = code?.dataset.full || b.previousElementSibling?.innerText || '';
+        try { await navigator.clipboard.writeText(text); b.textContent = t('install.copied'); b.classList.remove('copied'); void b.offsetWidth; b.classList.add('copied'); toast(t('install.copied')); }
         catch { toast(t('install.copy_failed')); }
-        setTimeout(() => { b.textContent = t('install.copy'); }, 1800);
+        setTimeout(() => { b.textContent = t('install.copy'); b.classList.remove('copied'); }, 1800);
     });
     document.addEventListener('click', (e) => { const b = e.target.closest('[data-lang]'); if (b) setLang(b.dataset.lang); });
 
