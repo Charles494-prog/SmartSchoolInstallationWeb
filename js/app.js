@@ -247,3 +247,18 @@
     }
     start().catch((err) => console.error(err));
 })();
+
+/* What's new: filter tabs */
+(() => {
+    const tabs = document.querySelectorAll('.nw-tabs [data-filter]');
+    const cards = document.querySelectorAll('.nw-card');
+    tabs.forEach((tab) => tab.addEventListener('click', () => {
+        const g = tab.dataset.filter;
+        tabs.forEach((x) => x.setAttribute('aria-selected', String(x === tab)));
+        cards.forEach((c, i) => {
+            c.hidden = g !== 'all' && c.dataset.group !== g;
+            c.classList.remove('in'); void c.offsetWidth;
+            if (!c.hidden) { c.style.animationDelay = (i % 8) * 30 + 'ms'; c.classList.add('in'); }
+        });
+    }));
+})();

@@ -27,6 +27,7 @@
             <a href="#day" data-i18n="nav.day"></a>
             <a href="#problem" data-i18n="nav.problem"></a>
             <a href="#features" data-i18n="nav.features"></a>
+            <a href="#new" data-i18n="nav.new"></a>
             <a href="#install" data-i18n="nav.install"></a>
             <a href="#requirements" data-i18n="nav.requirements"></a>
             <a href="#faq" data-i18n="nav.faq"></a>
@@ -293,6 +294,74 @@
                 <div class="feature"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5a10 10 0 0 1 14 0M2 9a15 15 0 0 1 20 0M8.5 16a5 5 0 0 1 7 0"/><circle cx="12" cy="19.5" r="1"/></svg><h3 data-i18n="features.f5.title"></h3><p data-i18n="features.f5.text"></p></div>
                 <div class="feature"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h9M8.5 3v2M6 5c0 4 3 7 6 8M11 5c-1 4-4 7-7 8M13 21l4-9 4 9M14.5 18h5"/></svg><h3 data-i18n="features.f6.title"></h3><p data-i18n="features.f6.text"></p></div>
                 <div class="feature"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 18l6-6-6-6M8 6l-6 6 6 6"/></svg><h3 data-i18n="features.f7.title"></h3><p data-i18n="features.f7.text"></p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What's new -->
+    <section class="section alt whatsnew" id="new" aria-labelledby="new-title">
+        <div class="wrap">
+            <p class="kicker center" data-i18n="new.kicker"></p>
+            <h2 id="new-title" data-i18n="new.title"></h2>
+            <p class="section-lead" data-i18n="new.lead"></p>
+            <div class="nw-tabs" role="tablist" data-i18n-attr="aria-label:new.title"><button type="button" role="tab" data-filter="all" aria-selected="true"><span data-i18n="new.tab_all"></span><small>14</small></button><button type="button" role="tab" data-filter="teach" aria-selected="false"><span data-i18n="new.tab_teach"></span><small>3</small></button><button type="button" role="tab" data-filter="office" aria-selected="false"><span data-i18n="new.tab_office"></span><small>4</small></button><button type="button" role="tab" data-filter="records" aria-selected="false"><span data-i18n="new.tab_records"></span><small>4</small></button><button type="button" role="tab" data-filter="family" aria-selected="false"><span data-i18n="new.tab_family"></span><small>3</small></button></div>
+            <div class="nw-grid" id="nw-grid">
+                <article class="nw-card" data-group="records">
+                    <div class="nw-mock" aria-hidden="true"><div class="m-tt"><i class="c1"></i><i class="c2"></i><i class="c3"></i><i class="c4"></i><i class="c5"></i><i class="c2"></i><i class="c4"></i><i class="c1"></i><i class="c5"></i><i class="c3"></i><i class="c3"></i><i class="c1"></i><i class="c5"></i><i class="c2"></i><i class="c4"></i><i class="c4"></i><i class="c5"></i><i class="c2"></i><i class="c3"></i><i class="c1"></i></div></div>
+                    <div class="nw-body"><span class="nw-tag" data-i18n="new.tab_records"></span><h3 data-i18n="new.timetable.t"></h3><p data-i18n="new.timetable.d"></p></div>
+                </article>
+                <article class="nw-card" data-group="records">
+                    <div class="nw-mock" aria-hidden="true"><div class="m-rooms"><b class=on>101</b><b class=on>102</b><b class=on>103</b><b class=on>104</b><b>105</b><b>106</b><b>107</b><b>108</b><b>109</b><b>110</b></div></div>
+                    <div class="nw-body"><span class="nw-tag" data-i18n="new.tab_records"></span><h3 data-i18n="new.rooms.t"></h3><p data-i18n="new.rooms.d"></p></div>
+                </article>
+                <article class="nw-card" data-group="records">
+                    <div class="nw-mock" aria-hidden="true"><div class="m-steps"><span class="done">1</span><em></em><span class="done">2</span><em></em><span class="cur">3</span><em></em><span>4</span></div><div class="m-pill" data-i18n="new.m_ready"></div></div>
+                    <div class="nw-body"><span class="nw-tag" data-i18n="new.tab_records"></span><h3 data-i18n="new.registrar.t"></h3><p data-i18n="new.registrar.d"></p></div>
+                </article>
+                <article class="nw-card" data-group="records">
+                    <div class="nw-mock" aria-hidden="true"><div class="m-books"><i style="--h:70%"></i><i style="--h:90%"></i><i style="--h:60%"></i><i style="--h:80%" class="late"></i><i style="--h:75%"></i><i style="--h:95%"></i></div></div>
+                    <div class="nw-body"><span class="nw-tag" data-i18n="new.tab_records"></span><h3 data-i18n="new.library.t"></h3><p data-i18n="new.library.d"></p></div>
+                </article>
+                <article class="nw-card" data-group="office">
+                    <div class="nw-mock" aria-hidden="true"><div class="m-list"><p><s class="ck on"></s>Tuition · Q2<b>₱4,500</b></p><p><s class="ck on"></s>Uniform<b>₱650</b></p><p><s class="ck"></s>Field trip<b>₱800</b></p><p class="tot"><span data-i18n="new.m_total"></span><b>₱5,150</b></p></div></div>
+                    <div class="nw-body"><span class="nw-tag" data-i18n="new.tab_office"></span><h3 data-i18n="new.payonline.t"></h3><p data-i18n="new.payonline.d"></p></div>
+                </article>
+                <article class="nw-card" data-group="office">
+                    <div class="nw-mock" aria-hidden="true"><div class="m-split"><span data-i18n="new.m_split"></span><div class="bar"><i style="width:62%"></i><i style="width:23%"></i><i style="width:15%"></i></div></div><div class="m-receipt"><em></em><em></em><em class="s"></em></div></div>
+                    <div class="nw-body"><span class="nw-tag" data-i18n="new.tab_office"></span><h3 data-i18n="new.cashier.t"></h3><p data-i18n="new.cashier.d"></p></div>
+                </article>
+                <article class="nw-card" data-group="office">
+                    <div class="nw-mock" aria-hidden="true"><div class="m-flow"><span class="done"></span><span class="done"></span><span class="done"></span><span class="cur"></span></div><div class="m-shop"><i></i><i></i><i></i></div></div>
+                    <div class="nw-body"><span class="nw-tag" data-i18n="new.tab_office"></span><h3 data-i18n="new.bookstore.t"></h3><p data-i18n="new.bookstore.d"></p></div>
+                </article>
+                <article class="nw-card" data-group="office">
+                    <div class="nw-mock" aria-hidden="true"><div class="m-list"><p><s class="av"></s>Santos, A.<b class="m-chip ok" data-i18n="new.m_paid"></b></p><p><s class="av"></s>Reyes, M.<b class="m-chip ok" data-i18n="new.m_paid"></b></p><p><s class="av"></s>Cruz, J.<b class="m-chip" data-i18n="new.m_pending"></b></p></div></div>
+                    <div class="nw-body"><span class="nw-tag" data-i18n="new.tab_office"></span><h3 data-i18n="new.payroll.t"></h3><p data-i18n="new.payroll.d"></p></div>
+                </article>
+                <article class="nw-card" data-group="teach">
+                    <div class="nw-mock" aria-hidden="true"><div class="m-q"><p class="qh">Q3 · Quiz 2</p><p><s class="rd on"></s>Photosynthesis</p><p><s class="rd"></s>Respiration</p><p class="sc">10/10</p></div></div>
+                    <div class="nw-body"><span class="nw-tag" data-i18n="new.tab_teach"></span><h3 data-i18n="new.classwork.t"></h3><p data-i18n="new.classwork.d"></p></div>
+                </article>
+                <article class="nw-card" data-group="teach">
+                    <div class="nw-mock" aria-hidden="true"><div class="m-list"><p>Math 7 · Rizal<b>88.4</b></p><p>Science 7 · Rizal<b>86.1</b></p></div><div class="m-btns"><span class="pri" data-i18n="new.m_approve"></span><span data-i18n="new.m_return"></span></div></div>
+                    <div class="nw-body"><span class="nw-tag" data-i18n="new.tab_teach"></span><h3 data-i18n="new.approvals.t"></h3><p data-i18n="new.approvals.d"></p></div>
+                </article>
+                <article class="nw-card" data-group="teach">
+                    <div class="nw-mock" aria-hidden="true"><div class="m-pod"><div style="--h:55%"><b>2</b></div><div class="first" style="--h:85%"><b>1</b></div><div style="--h:40%"><b>3</b></div></div></div>
+                    <div class="nw-body"><span class="nw-tag" data-i18n="new.tab_teach"></span><h3 data-i18n="new.honors.t"></h3><p data-i18n="new.honors.d"></p></div>
+                </article>
+                <article class="nw-card" data-group="family">
+                    <div class="nw-mock" aria-hidden="true"><div class="m-tog"><p>Grades<s class="sw on"></s></p><p>Attendance<s class="sw on"></s></p><p>Payments<s class="sw"></s></p></div></div>
+                    <div class="nw-body"><span class="nw-tag" data-i18n="new.tab_family"></span><h3 data-i18n="new.permissions.t"></h3><p data-i18n="new.permissions.d"></p></div>
+                </article>
+                <article class="nw-card" data-group="family">
+                    <div class="nw-mock" aria-hidden="true"><div class="m-note"><i class="pic"></i><div><em></em><em class="s"></em></div><b class="dot">3</b></div></div>
+                    <div class="nw-body"><span class="nw-tag" data-i18n="new.tab_family"></span><h3 data-i18n="new.notices.t"></h3><p data-i18n="new.notices.d"></p></div>
+                </article>
+                <article class="nw-card" data-group="family">
+                    <div class="nw-mock" aria-hidden="true"><div class="m-setup"><ol><li class="done"></li><li class="done"></li><li class="cur"></li><li></li></ol><div><em></em><em class="s"></em><em class="s"></em></div></div></div>
+                    <div class="nw-body"><span class="nw-tag" data-i18n="new.tab_family"></span><h3 data-i18n="new.setup.t"></h3><p data-i18n="new.setup.d"></p></div>
+                </article>
             </div>
         </div>
     </section>
